@@ -1,0 +1,5532 @@
+"""
+File Extension Type of the assets being searched, e.g. "png", "pdf"
+"""
+scalar AssetExtensionType
+
+"""Specify the way the assets are sorted"""
+scalar AssetSortType
+
+"""The slug associated with a specific blog post"""
+scalar BlogSlug
+
+"""The category to filter posts by"""
+scalar CategorySlug
+
+"""The color in RRGGBB format, e.g. `a4a4a4`."""
+scalar Color
+
+"""Embed code"""
+scalar EmbedMediaCode
+
+"""A comma delimited string of fonts, e.g. `helvetica,arial,sans-serif`."""
+scalar FontFamily
+
+"""Font style, e.g. `normal`."""
+scalar FontStyle
+
+"""Font weight, e.g. `bold`."""
+scalar FontWeight
+
+"""
+The required upfront percentage to start a freelance project, must be selected from 10,30,50
+"""
+scalar FreelanceProjectUpfrontPercentage
+
+"""Html code."""
+scalar Html
+
+"""Html code with iframe tag."""
+scalar HtmlWithIframe
+
+"""Attached file MIME Type, e.g. image/jpeg"""
+scalar InboxFileAttachmentMIMEInput
+
+"""File attachment title"""
+scalar InboxFileAttachmentTitleInput
+
+"""
+Specify an external url to apply a job with max length of 255. Will be ignored when `allowedApplyPlace` is "BEHANCE".
+"""
+scalar JobApplicationUrl
+
+"""Specify what city a job is for"""
+scalar JobCity
+
+"""Specify the company name with max length of 200 symbols."""
+scalar JobCompanyName
+
+"""Specify the company url with max length of 255 symbols."""
+scalar JobCompanyUrl
+
+"""Specify what country a job is for"""
+scalar JobCountry
+
+"""The pipe numeric creative fields ids, e.g. "44|123"."""
+scalar JobCreativeFieldIds
+
+"""Specify a full job description."""
+scalar JobDescription
+
+"""Job ID as integer value"""
+scalar JobId
+
+"""The short description with max length of 90 symbols."""
+scalar JobShortDescription
+
+"""Specify what state a job is for"""
+scalar JobState
+
+"""
+The list of tags splitting with a pipe character, e.g. "logo design|icons".
+"""
+scalar JobTags
+
+"""The title with max length of 200 symbols."""
+scalar JobTitle
+
+"""
+Specify the asset name with min length of 3 and max length of 255 symbols.
+"""
+scalar LinkedAssetName
+
+"""Specify the asset url with max length of 1000 symbols."""
+scalar LinkedAssetUrl
+
+"""Module ID as integer value"""
+scalar ModuleId
+
+"""NFT Contract Address."""
+scalar NFTContractAddressInput
+
+"""Whether the content being searched is premium or not"""
+scalar PremiumFilter
+
+"""
+The list of agency ids splitting with a pipe character, e.g. "185289859|84490865".
+"""
+scalar ProjectAgencies
+
+"""
+The list of brand ids splitting with a pipe character, e.g. "20627|20234".
+"""
+scalar ProjectBrands
+
+"""Specify a comment with max length of 800."""
+scalar ProjectCommentInput
+
+"""
+The list of member ids splitting with a pipe character, e.g. "20627|20234".
+"""
+scalar ProjectCoowners
+
+"""
+The list of creative fields splitting with a pipe character, e.g. "graphic design|illustration".
+"""
+scalar ProjectCreativeFields
+
+"""
+The list of member ids who will be recognized for the project splitting with a pipe character, e.g. "20627|20234".
+"""
+scalar ProjectCredits
+
+"""The project description."""
+scalar ProjectDescription
+
+"""Project ID as integer value"""
+scalar ProjectId
+
+"""
+The list of school ids splitting with a pipe character, e.g. "20627|20234".
+"""
+scalar ProjectSchools
+
+"""
+The list of tags splitting with a pipe character, e.g. "logo design|icons".
+"""
+scalar ProjectTags
+
+"""
+The list of team ids splitting with a pipe character, e.g. "20627|20234".
+"""
+scalar ProjectTeamsInput
+
+"""The project title with maximum of 55 symbols."""
+scalar ProjectTitle
+
+"""
+The list of tool ids splitting with a pipe character, e.g. "185289859|84490865".
+"""
+scalar ProjectTools
+
+"""
+The list of visible network ids splitting with a pipe character, e.g. "0|20".
+"""
+scalar ProjectVisibleNetworkIds
+
+"""
+The list of ids (users who can see private project) splitting with a pipe character, e.g. "1|2|3".
+"""
+scalar ProjectVisibleToUserIds
+
+"""A comma separated list of recipients"""
+scalar Recipients
+
+"""Additional message when reporting user."""
+scalar ReportUserMessage
+
+"""image id as integer value"""
+scalar SimilarStyleImageId
+
+"""SourceFile MIME Type"""
+scalar SourceFileMIMEType
+
+"""SourceFile title type"""
+scalar SourceFileTitleType
+
+"""Type of files attached to the item being searched"""
+scalar SourceFilesFilter
+
+"""The tag categories to search"""
+scalar TagSearchCategory
+
+"""The tag search query"""
+scalar TagSearchQuery
+
+"""Text alignment, e.g. `left`."""
+scalar TextAlign
+
+"""Text decoration, e.g. `none`."""
+scalar TextDecoration
+
+"""Text transform, e.g. `uppercase`."""
+scalar TextTransform
+
+"""3D Asset ID."""
+scalar ThreeDAssetIdInput
+
+"""Title of the tag to be created"""
+scalar Title
+
+"""Url with max size of 2,000 characters."""
+scalar Url
+
+"""Whether the user is available for freelance work"""
+scalar UserAvailabilityFreelance
+
+"""Whether the user is available for full time work"""
+scalar UserAvailabilityFullTime
+
+"""Whether the user is looking for remote work"""
+scalar UserAvailabilityRemote
+
+"""Whether the user accepts freelance payments on behance"""
+scalar UserPaymentsFilter
+
+"""The search query"""
+scalar UserTypeaheadQuery
+
+"""
+Length of the videos being searched, e.g. "long", "short"
+"""
+scalar VideoDurationFilter
+
+"""Video ID as integer value"""
+scalar VideoId
+
+"""
+The creative field the videos are filtered to, e.g. "graphic design"
+"""
+scalar VideoSearchCreativeField
+
+"""The search query"""
+scalar VideoSearchQuery
+
+"""Specify the tool id the videos are filtered to"""
+scalar VideoSearchToolId
+
+"""
+Type of the videos being searched, e.g. "adobe live"
+"""
+scalar VideoSearchTypeFilter
+
+"""Specify the way the videos are sorted"""
+scalar VideoSortType
+
+"""Type of files attached to the videos being searched"""
+scalar VideoSourceFilesFilter
+
+"""
+Type of subscription for the videos being searched, e.g. "premium"
+"""
+scalar VideoSubscriptionFilter
+
+"""Type of files attached to the item being searched"""
+scalar assetsCategoryFilter
+
+"""Type of files attached to the item being searched"""
+scalar assetsFilter
+
+"""Price tier of source files being searched"""
+scalar assetsPriceTierFilter
+
+"""Specify which cc service a user has"""
+scalar ccService
+
+"""Specify which city a user belongs to"""
+scalar city
+
+""""""
+scalar city_name
+
+"""Query the color of the image"""
+scalar color_hex
+
+""""""
+scalar company
+
+"""Specify which country a user belongs to"""
+scalar country
+
+""""""
+scalar country_name
+
+"""
+The creative field the jobs are filtered to, e.g. "graphic design"
+"""
+scalar creativeField
+
+"""Query creative fields associated with a video"""
+scalar creative_field
+
+"""Query the creative fields of the project that contains the image"""
+scalar creative_fields
+
+"""Query the aperture field in the exif data"""
+scalar exif_aperture
+
+"""Query the flash field in the exif data"""
+scalar exif_flash
+
+"""Query the focal length field in the exif data"""
+scalar exif_focal_length
+
+"""Query the iso field in the exif data"""
+scalar exif_iso
+
+"""Query for the lens field in the exif data"""
+scalar exif_lens
+
+"""Query for the lens_brand field in the exif data"""
+scalar exif_lens_brand
+
+"""Query the make field in the exif data"""
+scalar exif_make
+
+"""Query the make field in the exif data for an exact match"""
+scalar exif_make_exact
+
+"""Query the shutter speed field in the exif data"""
+scalar exif_shutter_speed
+
+"""Query for the zoom field in the exif data"""
+scalar exif_zoom
+
+"""Query creative fields associated with a user"""
+scalar field
+
+""""""
+scalar firstName
+
+"""Specify whether the image is a gif or other file type"""
+scalar gif
+
+"""Whether the user has a subscription offering or not"""
+scalar has_subscription
+
+""""""
+scalar lastName
+
+""""""
+scalar locationId
+
+"""Specify whether the image is an nft"""
+scalar nft
+
+""""""
+scalar occupation
+
+"""The search query"""
+scalar query
+
+""""""
+scalar references
+
+"""Specify which a school a user has attended"""
+scalar schools
+
+""""""
+scalar sections
+
+""""""
+scalar socialReferences
+
+"""Specify the way the results are sorted"""
+scalar sort
+
+"""Type of files attached to the item being searched"""
+scalar sourceFileCategory
+
+"""Price tier of source files being searched"""
+scalar sourceFilePriceTier
+
+"""Specify which state a user belongs to"""
+scalar state
+
+""""""
+scalar state_name
+
+""""""
+scalar teams
+
+"""Specify which city a user belongs to"""
+scalar time
+
+"""Query tools used to create the image"""
+scalar tools
+
+"""The evaluated url"""
+scalar url
+
+""""""
+scalar website
+
+enum AdobeOfferItem {
+  cc_all_apps
+  cc_students_teachers
+  photoshop_lightroom
+}
+
+enum AnalyticType {
+  CUSTOM
+  PAGEVIEW
+  VIDEO
+}
+
+enum AvailabilityButtonCTAType {
+  hire_me
+  hire_us
+}
+
+enum AvailabilityCurrencyType {
+  AED
+  ARS
+  AUD
+  BHD
+  BRL
+  BTC
+  CAD
+  CHF
+  CLP
+  CNY
+  COP
+  DKK
+  EGP
+  ETH
+  EUR
+  GBP
+  HKD
+  IDR
+  ILS
+  INR
+  JOD
+  JPY
+  KRW
+  KWD
+  LBP
+  MXN
+  MYR
+  NOK
+  OMR
+  PEN
+  PHP
+  QAR
+  RUB
+  SAR
+  SEK
+  SGD
+  THB
+  TRY
+  TWD
+  USD
+}
+
+enum AvailabilityTimelineOption {
+  over_six_months
+  three_to_six_months
+  within_next_few_weeks
+  within_three_months
+}
+
+enum BlogPostType {
+  BLOG_POST
+  LANDING_PAGE
+}
+
+enum BlogSortType {
+  """Returns the blog posts sorted by publish date in ascending order"""
+  PUBLISH_DATE_ASC
+  """Returns the blog posts sorted by publish date in descending order"""
+  PUBLISH_DATE_DESC
+}
+
+enum CcvVideoStatus {
+  """Renditions generated."""
+  COMPLETED
+  """Renditions generation failed."""
+  FAILED
+  """Video rendition generation has started."""
+  PROCESSING
+  """Video is queued for rendition generation."""
+  QUEUED
+  """Cannot get the information about video status."""
+  UNKNOWN
+}
+
+enum CommentMentionsSetting {
+  followers_only
+  off
+  on
+}
+
+enum ContentLanguage {
+  de
+  en
+  fr
+}
+
+"""The file prefix used for new uploaded files."""
+enum FileUploadPrefix {
+  """For uploading inbox file attachments."""
+  INBOX_FILE_ATTACHMENT
+  """For uploading source files."""
+  SOURCE_FILE
+}
+
+enum ForYouFeedItemEntityType {
+  FOLLOWED_TAG_PROJECT
+  PROJECT
+  USERLIVESTREAM
+  WIP
+}
+
+enum FreelancePaymentStatus {
+  DECLINED
+  PAID
+  REFUNDED
+  REQUESTED
+  UNPAID
+}
+
+enum FreelancePaymentType {
+  PROJECT_FINAL
+  PROJECT_UPFRONT
+}
+
+enum FreelanceProjectHistoryStatus {
+  INQUIRY_DECLINED
+  PAYMENT_MADE
+  PAYMENT_REQUESTED
+  PAYMENT_REQUEST_DECLINED
+  PROPOSAL_ACCEPTED
+  PROPOSAL_CANCELED
+  PROPOSAL_COMPLETED
+  PROPOSAL_DECLINED
+}
+
+enum FreelanceProjectStatus {
+  ACCEPTED
+  CANCELED
+  COMPLETE
+  DECLINED
+  DISCARDED
+  NEW
+}
+
+enum FreelanceProjectUpdateType {
+  INQUIRY_DECLINED
+  PAYMENT_MADE
+  PAYMENT_REQUESTED
+  PAYMENT_REQUEST_DECLINED
+  PROPOSAL_ACCEPTED
+  PROPOSAL_CANCELED
+  PROPOSAL_COMPLETED
+  PROPOSAL_DECLINED
+}
+
+enum FreelanceServiceAssetType {
+  MODULE
+  PROJECT
+}
+
+enum FreelanceServiceDeliveryTime {
+  LESS_THAN_A_WEEK
+  WITHIN_1_MONTH
+  WITHIN_1_TO_2_WEEKS
+  WITHIN_2_MONTHS
+  WITHIN_3_MONTHS
+}
+
+enum FreelanceServiceDeliveryTimeline {
+  LESS_THAN_A_WEEK
+  WITHIN_1_MONTH
+  WITHIN_1_TO_2_WEEKS
+  WITHIN_2_MONTHS
+  WITHIN_3_MONTHS
+}
+
+enum HireMeFreelanceProjectStatus {
+  ACCEPTED
+  COMPLETED
+  CREATED
+  DECLINED
+  NOT_CREATED
+}
+
+enum InboxBoxLocationType {
+  ARCHIVE
+  INBOX
+  SHORTLIST
+}
+
+enum InboxHireMeType {
+  FREELANCE
+  FULLTIME
+}
+
+enum InboxThreadMessageType {
+  DEFAULT
+  HIRE_ME
+  JOB
+}
+
+enum InboxThreadParentType {
+  JOB
+}
+
+enum InvalidFreelanceServiceDeliveryTimeline {
+  LESS_THAN_A_WEEK
+  WITHIN_1_MONTH
+  WITHIN_1_TO_2_WEEKS
+  WITHIN_2_MONTHS
+  WITHIN_3_MONTHS
+}
+
+enum JobAllowedApplyPlace {
+  """An applicant applies for a job from Behance."""
+  BEHANCE
+  """An applicant applies for a job an external link."""
+  EXTERNALLINK
+}
+
+enum JobCompanyType {
+  """When a job is posted from a company"""
+  COMPANY
+  """When a job is posted as an individual"""
+  INDIVIDUAL
+  """For old jobs compatibility. Do not use during job creation/updating!"""
+  LEGACY
+}
+
+enum JobRemoteStatus {
+  """A job should be done on site only"""
+  ONSITE
+  """A job could be done remotely"""
+  REMOTE
+}
+
+enum JobStatus {
+  """
+  This status is available for `ARCHIVED` jobs only, or could be set up by admin
+  """
+  ACTIVE
+  """
+  This status is available for `ACTIVE` jobs only, or could be set up by admin
+  """
+  ARCHIVED
+  """This status could be set up by admin only"""
+  DENIED
+  """This status could be set up by admin only"""
+  PENDING
+}
+
+enum JobType {
+  FREELANCE
+  FULLTIME
+  """
+  For old jobs compatibility. Do not use it during job creation/updating!
+  """
+  INTERNSHIP
+}
+
+enum LightroomAssetType {
+  DISCOVER
+  REMIXABLE
+  TUTORIAL
+}
+
+enum LivestreamQueryableStatus {
+  LIVE
+  REPLAYS
+}
+
+enum LivestreamState {
+  CANCELLED
+  CANCELLING
+  CONNECTED
+  CREATING_VIDEO
+  DELETE_PENDING
+  DISCONNECTED
+  ERROR
+  FAILED
+  FINISHED
+  FINISHING
+  PROCESSING
+  STANDBY
+  VIDEO_READY
+  WAITING
+}
+
+enum MediaCollectionSortType {
+  AZ
+  CUSTOM
+  DATE_ASC
+  DATE_DESC
+  ZA
+}
+
+enum MediaCollectionType {
+  GRID
+}
+
+enum MeetingEligibility {
+  ELIGIBLE
+  INQUIRY_RECEIVED_NO_REPLY
+  INQUIRY_SENT_NO_REPLY
+  INVALID_PARTICIPANTS
+  NO_INQUIRY
+  TOO_MANY_PARTICIPANTS
+}
+
+enum MeetingStatus {
+  ENDED
+  STARTED
+}
+
+enum ModuleStatus {
+  COMPLETE
+  ERROR
+  IN_PROGRESS
+  NO_PROGRESS
+  UNKNOWN
+}
+
+"""Provides the details to filter by."""
+enum MoodboardContainsType {
+  GRID_ITEM
+  MODULE
+  PROJECT
+}
+
+enum MoodboardItemFetchSourceType {
+  cold_start
+  recommended
+}
+
+enum NFTModuleTypes {
+  IMAGE
+  VIDEO
+}
+
+enum NotificationType {
+  LIVESTREAM
+  PROJECT
+}
+
+enum NotificationsDriver {
+  BELL_COUNT
+  BELL_NOTE
+  BELL_NOTIFICATION
+  ELASTIC_SEARCH
+  EMAIL
+  INBOX
+  IOS_BELL_COUNT
+  IOS_BELL_NOTE
+  IOS_NETWORK_V3
+  IOS_NETWORK_V4
+  IOS_TALENT
+  THOR
+  WEBHOOKS
+}
+
+enum OnboardingViewType {
+  """Hardcoded list of sub-categories with shuffling the output"""
+  FANCY
+}
+
+enum PremiumContentPrivacy {
+  private
+  public
+}
+
+enum PremiumStatus {
+  NON_PREMIUM
+  PREMIUM
+}
+
+enum ProfileTabTitle {
+  APPRECIATIONS
+  DRAFTS
+  INSIGHTS
+  LIVESTREAMS
+  MOODBOARDS
+  NFT
+  PROJECTS
+  SERVICES
+  SOURCE_FILES
+  STOCK
+}
+
+enum ProjectCommentsStatus {
+  ALLOWED
+  FORBIDDEN
+}
+
+enum ProjectLicenseType {
+  """Attribution (CC BY)"""
+  ATTR
+  """Attribution-NonCommercial (CC BY-NC)"""
+  ATTR_NON_CO
+  """Attribution-NonCommercial-NoDerivs (CC BY-NC-ND)"""
+  ATTR_NON_CO_NO_DERIV
+  """Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)"""
+  ATTR_NON_CO_SHARE_ALIKE
+  """Attribution NoDerivs (CC BY-ND)"""
+  ATTR_NO_DERIV
+  """Attribution ShareAlike (CC BY-SA)"""
+  ATTR_SHARE_ALIKE
+  """All Rights Reserved"""
+  NO_USE
+}
+
+enum ProjectMatureContentStatus {
+  OFF
+  ON
+}
+
+enum ProjectModuleFullBleed {
+  NO
+  YES
+}
+
+enum ProjectPrivacy {
+  PRIVATE
+  PUBLIC
+}
+
+enum ProjectPrivacyLevel {
+  """The project visible for co-owners only."""
+  MEMBERS
+  PORTFOLIO
+  PRIVATE
+  """For legacy project compatibility - not really a project now."""
+  PROSITE
+  PUBLIC
+  UNKNOWN
+}
+
+enum ProjectPublishStatus {
+  DRAFT
+  PUBLISHED
+}
+
+enum RelationshipsByLrAssetRecencyType {
+  FOLLOWERS
+  FOLLOWING
+}
+
+enum ReportUserReasons {
+  COPYRIGHT_VIOLATION
+  FRAUD
+  HARASSMENT
+  HATE_SPEECH
+  ILLEGAL_GOODS_OR_SERVICE
+  INAPPROPRIATE_BEHAVIOR_WITH_MINOR
+  MISINFORMATION
+  NUDITY_OR_SEXUAL_ACTIVITY
+  OTHER
+  PRIVACY_VIOLATION
+  PROFANITY
+  PROMOTES_TERRORISM
+  SELF_HARM
+  SPAM_OR_OFFTOPIC
+  TRADEMARK_VIOLATION
+  VIOLENCE_OR_GORE
+}
+
+enum SearchShortcutType {
+  """Returns shortcut matching Adobe tools."""
+  ADOBE_TOOL
+  """Returns shortcut matching downloadable asset types."""
+  ASSET
+  """Returns shortcut matching creative fields or job titles."""
+  HIRE
+}
+
+enum SearchType {
+  """Returns results matching embeds."""
+  EMBED
+  """Returns results matching images."""
+  IMAGE
+  """Returns results matching moodboards."""
+  MOODBOARD
+  """Returns results matching projects."""
+  PROJECT
+  """Returns results matching teams."""
+  TEAM
+  """Returns results matching users."""
+  USER
+}
+
+enum SourceFileLicenseType {
+  PERSONAL_USE
+  STANDARD_LICENSE
+}
+
+enum SourceFilePaymentStatus {
+  DECLINED
+  PAID
+  REFUNDED
+  REQUESTED
+  UNPAID
+}
+
+enum SourceFilePriceTier {
+  FREE
+  PAID
+  SUBSCRIPTION_ONLY
+}
+
+enum SourceFilesCategory {
+  FONTS
+  ILLUSTRATIONS
+  PHOTOS
+  TEMPLATES
+  VECTORS
+  VIDEOS
+}
+
+enum StripeAccountStatus {
+  CAN_BE_SUBSCRIBED_TO
+  CAN_CREATE_SUBSCRIPTION
+  CAN_SEND_FREELANCE_PROPOSALS
+  LINKED
+  NOT_LINKED
+  NO_ACCOUNT
+  PENDING_VERIFICATION
+  REQUIRES_STRIPE_UPDATE
+  REQUIRES_UPDATE
+  VERIFICATION_FAILED
+}
+
+enum SubscriptionStatus {
+  ACTIVE
+  CANCELED
+  INCOMPLETE
+  UNKNOWN
+}
+
+enum TagCategory {
+  AGENCY
+  AWARD
+  AWARD_ORGANIZATION
+  CLIENT
+  HARDWARE
+  LANGUAGE
+  MATERIALS
+  ONLINE
+  SCHOOL
+  SKILL
+  SOFTWARE
+  TOOL
+}
+
+enum ThreeDAssetType {
+  ATLAS
+  DECAL
+  MATERIAL
+  MODEL
+}
+
+enum TypeaheadType {
+  MENTIONS
+  NGRAM
+}
+
+enum UserAssetType {
+  STOCK_ASSET
+}
+
+type AdminPermissions {
+  isCurationBlocklistAdmin: Boolean
+  isSearchManageAdmin: Boolean
+  isSpamBlocklistAdmin: Boolean
+  isSuggestionAdmin: Boolean
+  isUseAccountAdmin: Boolean
+  isViewEmailAdmin: Boolean
+}
+
+type AdobeGallery {
+  icon: String!
+  id: Int!
+  name: String!
+  url: String!
+}
+
+type AdobeLiveAction {
+  actor: User
+  video: AdobeLiveVideo
+}
+
+type AdobeLiveHostInfo {
+  avatar: String!
+  location: String!
+  name: String!
+  url: String!
+}
+
+type AdobeLiveVideo {
+  appreciations: Int!
+  chat: Chat
+  collectionId: Int!
+  contentLanguage: ContentLanguage!
+  createdOn: String!
+  creativeCategory: CreativeCategory
+  description: String!
+  durationSeconds: Int!
+  encodedTitle: String!
+  endTimestamp: String!
+  etag: String!
+  hostInfo: AdobeLiveHostInfo!
+  id: Int!
+  isAppreciated: Boolean!
+  isInTransition: Boolean!
+  isLive: Boolean!
+  modifiedOn: String!
+  startTimestamp: String!
+  tags: [Tag]!
+  thumbnailUrl: String!
+  title: String!
+  tools: [Tool]!
+  transitionSeconds: Int!
+  url: String!
+  users: [User]!
+  videoId: String!
+  videoPageUrl: String!
+  videoType: String!
+  views: Int!
+}
+
+type AdobeOffer {
+  country_code: String!
+  is_fallback: Boolean!
+  item: AdobeOfferItem!
+  offer_id: String!
+  pricing: AdobeOfferPricing!
+}
+
+type AdobeOfferPricing {
+  code: String!
+  delimiter: String
+  format_string: String!
+  symbol: String!
+  use_precision: Boolean!
+  value: Float!
+}
+
+type AllowedExtensions {
+  """Allowed audio extensions"""
+  audio: [String!]
+  """Allowed image extensions"""
+  image: [String!]
+  """Allowed video extensions"""
+  video: [String!]
+}
+
+type AllowsContactFromAnyone {
+  allowsContactFromAnyone: Boolean!
+}
+
+type AnnotationLink {
+  content: String
+  id: Int!
+  segmentId: Int!
+  tagId: Int!
+  type: String
+  url: String
+}
+
+type Announcement {
+  createdOn: Int!
+  description: String!
+  href: String!
+  id: Int!
+  image: String!
+  promotionEnd: Int
+  promotionStart: Int
+  title: String!
+}
+
+type AnnouncementAction {
+  actor: User
+  announcement: Announcement
+}
+
+type ApplicantShortlistError {
+  errorMessage: String
+}
+
+type AppliedJobItemConnection {
+  edges: [JobItemEdge]!
+  metaContent: JobItemMetaContent!
+  nodes: [JobItem]!
+  pageInfo: PageInfo!
+}
+
+type ApplyToJobError {
+  errorMessage: String
+}
+
+type AppreciateAction {
+  actor: User
+  project: Project
+}
+
+type AppreciatedProjectsConnection {
+  edges: [AppreciatedProjectsEdge]!
+  nodes: [Project]!
+  pageInfo: PageInfo!
+}
+
+type AppreciatedProjectsEdge {
+  cursor: String!
+  node: Project!
+}
+
+type Asset {
+  category: SourceFilesCategory
+  featuredOn: String
+  id: String!
+  priceTier: SourceFilePriceTier
+  project: Project
+  title: String!
+}
+
+type AssetConnection {
+  edges: [AssetEdge]!
+  metaContent: AssetMetaContent!
+  nodes: [Asset]!
+  pageInfo: PageInfo!
+}
+
+type AssetEdge {
+  cursor: String!
+  node: Asset!
+}
+
+type AssetMetaContent {
+  totalEntityCount: Int
+}
+
+type AssetShortcut {
+  isCategory: Boolean!
+  urlPath: String!
+}
+
+type AudioModule {
+  alignment: String!
+  caption: String!
+  captionAlignment: String!
+  captionPlain: String!
+  embed: String
+  fullBleed: Int
+  """Module id"""
+  id: Int!
+  isDoneProcessing: Boolean!
+  project: Project!
+  """Project id the module belongs to"""
+  projectId: Int!
+  status: ModuleStatus!
+}
+
+type AutoTag {
+  score: Float
+  title: String!
+}
+
+type AwsChimeAttendee {
+  AttendeeId: String!
+  ExternalUserId: String!
+  JoinToken: String!
+}
+
+type AwsChimeMediaPlacement {
+  AudioFallbackUrl: String!
+  AudioHostUrl: String!
+  EventIngestionUrl: String!
+  ScreenDataUrl: String!
+  ScreenSharingUrl: String!
+  ScreenViewingUrl: String!
+  SignalingUrl: String!
+  TurnControlUrl: String!
+}
+
+type AwsChimeMeeting {
+  ExternalMeetingId: String!
+  MediaPlacement: AwsChimeMediaPlacement!
+  MediaRegion: String!
+  MeetingId: String!
+}
+
+"""
+Returned if notification type is unknown or undefined. Includes actor data only.
+"""
+type BaseAction {
+  actor: User
+}
+
+type BlogCategory {
+  label: String!
+  slug: String!
+}
+
+type BlogCreativeCategory {
+  name: String!
+  url: String!
+}
+
+type BlogFeaturedCreative {
+  avatarId: String!
+  creativeCategories: [BlogCreativeCategory!]
+  name: String!
+  summary: String!
+  url: String!
+}
+
+type BlogFeaturedCreativeConnection {
+  edges: [BlogFeaturedCreativeEdge!]!
+  nodes: [BlogFeaturedCreative!]!
+  pageInfo: PageInfo!
+}
+
+type BlogFeaturedCreativeEdge {
+  cursor: String!
+  node: BlogFeaturedCreative!
+}
+
+type BlogPost {
+  appreciationCount: Int!
+  categories: [BlogCategory]
+  content: String!
+  externalAuthorBio: String
+  externalAuthorName: String
+  featuredImage: BlogPostFeaturedImage!
+  featuredImageAuthorAvatarUrl: String
+  featuredImageAuthorLocation: String
+  id: Int!
+  keywords: [String]
+  publishedOn: String!
+  slug: String!
+  status: String!
+  summary: String!
+  tagLine: String
+  title: String!
+  updatedOn: String
+}
+
+type BlogPostFeaturedImage {
+  author: String
+  authorUrl: String
+  behanceUrl: String
+  id: String!
+  sourceProject: String
+  sourceProjectUrl: String
+}
+
+type CSAM {
+  description: String
+  helpResource: String
+  isCSAMViolation: Boolean!
+  reportingOption: String
+  title: String
+}
+
+type CachedSubscriptionPrice {
+  price: Int
+}
+
+type CaiClaim {
+  categories: [String]
+  producedBy: String!
+  producedWith: String!
+  references: [CaiClaimReference]
+  signedBy: String!
+  signedOn: Int!
+  thumbnailUrl: String!
+  title: String!
+}
+
+type CaiClaimReference {
+  claimId: ID
+  documentId: ID!
+  thumbnailUrl: String!
+  title: String!
+  type: String!
+}
+
+type CcvVideoData {
+  originalHeight: Int!
+  originalWidth: Int!
+  progressValue: Int!
+  """An array of transcoded video renditions"""
+  renditions: [CcvVideoRendition!]!
+  status: CcvVideoStatus!
+}
+
+type CcvVideoRendition {
+  """
+  The rendition's encoding rate, in bits per second, or null for rendition types that do not have a strict bit rate.
+  """
+  encodingRate: Int
+  """The rendition's frame height, in pixels"""
+  frameHeight: Int!
+  """The rendition's frame width, in pixels"""
+  frameWidth: Int!
+  """A temporary URL for direct access to this rendition"""
+  url: String!
+  """The codec needed to decode this video. Supported values: `H264`"""
+  videoCodec: String!
+  """
+  The format of the wrapper that provides metadata and describes how the video and audio are stored in the file. Supported values: `MP4`, `M2TS`
+  """
+  videoContainer: String!
+}
+
+type Chat {
+  appKey: String
+  articleId: String
+  base64ArticleId: String
+  channelId: String
+  collectionId: Int
+  enabled: Boolean!
+  messageFilterId: String
+  network: String
+  networkName: String
+  siteId: String
+  url: String
+}
+
+type ChimeMeeting {
+  Attendee: AwsChimeAttendee!
+  Meeting: AwsChimeMeeting!
+}
+
+type CloneProjectError {
+  errorMessage: String
+}
+
+type Colors {
+  b: Int
+  g: Int
+  r: Int
+}
+
+type CreateFreelanceServiceError {
+  errorMessage: String!
+}
+
+type CreateJobInvalidInputError {
+  applicationUrlError: String
+  companyImageError: String
+  companyNameError: String
+  companyTypeError: String
+  companyUrlError: String
+  creativeFieldIdsError: String
+  descriptionError: String
+  """A general error not related to input fields."""
+  errorMessage: String
+  jobTypeError: String
+  locationCityError: String
+  locationCountryError: String
+  locationStateError: String
+  shortDescriptionError: String
+  tagsError: String
+  titleError: String
+}
+
+type CreateProjectCommentInvalidInputError {
+  commentError: String
+  """A general error not related to input fields."""
+  errorMessage: String
+}
+
+type CreatedJobItemConnection {
+  edges: [JobItemEdge]!
+  metaContent: JobItemMetaContent!
+  nodes: [JobItem]!
+  pageInfo: PageInfo!
+}
+
+type CreativeCategory {
+  id: Int!
+  name: String!
+}
+
+type CreativeField {
+  id: String!
+  name: String!
+  url: String!
+}
+
+type CreativeNotification {
+  isEnabled: Boolean!
+  name: NotificationType!
+}
+
+type CreatorSubscriptionStartedAction {
+  actor: User
+  imageUrl: String
+}
+
+type CuratedCategory {
+  icon: String!
+  id: Int!
+  latestProjects: [Project]!
+  name: String!
+  uniqueSlug: String!
+  url: String!
+}
+
+type DeleteFreelanceServiceResponse {
+  errorMessage: String
+  isSuccess: Boolean!
+}
+
+type DeleteJobResponse {
+  """An error during job deletion."""
+  errorMessage: String
+  """Job deletion success status."""
+  isSuccess: Boolean!
+}
+
+type DeleteProjectCommentResponse {
+  """An error during project comment deletion."""
+  errorMessage: String
+  """Project comment deletion success status."""
+  isSuccess: Boolean!
+}
+
+type DeleteSourceFileResponse {
+  isDeleted: Boolean!
+}
+
+type DeletedMessage {
+  message: String!
+}
+
+type DraftProjects {
+  count: Int!
+  projects: [Project]!
+}
+
+type EditFreelanceServiceError {
+  errorMessage: String!
+}
+
+type EmbedModule {
+  alignment: String!
+  caption: String!
+  captionAlignment: String!
+  captionPlain: String!
+  fluidEmbed: String!
+  fullBleed: Int!
+  height: Int!
+  id: Int!
+  info: String
+  originalEmbed: String!
+  originalHeight: Int!
+  originalWidth: Int!
+  project: Project!
+  tags: [String]
+  width: Int!
+  widthUnit: String!
+}
+
+type ExpiredStorySegment {
+  id: Int!
+}
+
+type ExpressAsset {
+  id: String!
+  numFavorites: Int!
+  source: String!
+  status: String!
+  type: String!
+}
+
+type FeatureProject {
+  featuredOn: Int!
+  id: Int!
+}
+
+type FeatureQueue {
+  icon: String!
+  id: Int!
+  latestProjects: [Project]!
+  name: String!
+  uniqueSlug: String!
+  url: String!
+}
+
+type FileExtensionToMimeTypeMap {
+  """
+  The list of the supported extension to mimeType map for inbox file attachments in JSON format.
+  """
+  inbox: String!
+  """
+  The list of the supported extension to mimeType map for source files in JSON format.
+  """
+  sourceFiles: String!
+}
+
+type FollowCollectionAction {
+  actor: User
+  collection: Moodboard
+}
+
+type FollowGalleryError {
+  errorMessage: String
+}
+
+type FollowUserAction {
+  actor: User
+}
+
+type FollowUserError {
+  errorMessage: String
+}
+
+type FollowableTag {
+  isFollowing: Boolean!
+  tag: Tag
+}
+
+type FontConfig {
+  """ORDERED_FONTS text editor constant"""
+  orderedFonts: [OrderedFonts!]!
+}
+
+type ForYouFeedItem {
+  action: String!
+  actor: ForYouFeedActor
+  createdOn: Int!
+  entity: ForYouFeedItemEntity!
+}
+
+type ForYouFeedItemConnection {
+  edges: [ForYouFeedItemEdge]!
+  metaContent: ForYouFeedMetaContent!
+  nodes: [ForYouFeedItem]!
+  pageInfo: PageInfo!
+}
+
+type ForYouFeedItemEdge {
+  cursor: String!
+  node: ForYouFeedItem!
+}
+
+type ForYouFeedMetaContent {
+  """
+  The list of creative category labels if the logged in user has not seen ForYou welcome section
+  """
+  welcomeFields: [String!]!
+}
+
+type ForYouFeedSavedSeenEntity {
+  entityId: Int!
+  entityType: ForYouFeedItemEntityType!
+}
+
+type FreelancePayment {
+  breakdown: FreelancePaymentBreakdown
+  currency: String!
+  id: Int!
+  modifiedOn: Int!
+  netAmount: Float
+  paymentIntent: PaymentIntent
+  project: FreelanceProject
+  """Deprecated. use Invoice instead"""
+  receiptUrl: String
+  recipient: User
+  sender: User
+  status: FreelancePaymentStatus!
+  type: FreelancePaymentType!
+  unitAmount: Float!
+}
+
+type FreelancePaymentBreakdown {
+  creativeFee: Float
+  hirerFee: Float
+  netEstimate: Float
+  projectAmount: Float
+  stripeFee: Float
+  totalAmount: Float
+}
+
+type FreelancePaymentConnection {
+  edges: [FreelancePaymentEdge!]!
+  nodes: [FreelancePayment!]!
+  pageInfo: PageInfo!
+}
+
+type FreelancePaymentEdge {
+  cursor: String!
+  node: FreelancePayment!
+}
+
+type FreelancePaymentRequestAttachment {
+  freelancePayment: FreelancePayment!
+  freelanceProject: FreelanceProject
+}
+
+type FreelanceProject {
+  creator: User
+  currency: String!
+  deliveryDate: Int!
+  description: String!
+  hirer: User
+  history: [FreelanceProjectHistory]!
+  id: Int!
+  modifiedOn: Int!
+  paymentPlan: FreelanceProjectPaymentPlan
+  payments: [FreelancePayment]
+  status: FreelanceProjectStatus!
+  title: String!
+  unitAmount: Float!
+  upfrontPercent: Int!
+}
+
+type FreelanceProjectConnection {
+  edges: [FreelanceProjectEdge!]!
+  nodes: [FreelanceProject!]!
+  pageInfo: PageInfo!
+}
+
+type FreelanceProjectEdge {
+  cursor: String!
+  node: FreelanceProject!
+}
+
+type FreelanceProjectHistory {
+  actor: User
+  payment: FreelancePayment
+  paymentPercent: Int
+  status: FreelanceProjectHistoryStatus!
+  timestamp: Int!
+}
+
+type FreelanceProjectPaymentPlan {
+  initial: FreelancePaymentBreakdown!
+  remaining: FreelancePaymentBreakdown!
+  total: FreelancePaymentBreakdown!
+}
+
+type FreelanceProjectPublicInfo {
+  creator: User
+  hasViewerReviewed: Boolean!
+  hirer: User
+  id: Int!
+  modifiedOn: Int!
+  status: FreelanceProjectStatus!
+  title: String!
+}
+
+type FreelanceProjectReview {
+  freelanceProject: FreelanceProjectPublicInfo!
+  id: Int!
+  review: String!
+  reviewer: User!
+}
+
+type FreelanceProjectReviewedAction {
+  actor: User
+  review: FreelanceProjectReview
+}
+
+type FreelanceProjectUpdateAttachment {
+  freelanceProject: FreelanceProject
+  hasViewerReviewed: Boolean!
+  projectId: Int
+  status: String!
+  type: FreelanceProjectUpdateType!
+}
+
+type FreelanceProjectUserInfo {
+  completedProjectCount: Int!
+  completedProjects: [FreelanceProjectPublicInfo]
+  projectsWithMe: [FreelanceProject]
+  reviews: [FreelanceProjectReview]
+}
+
+type FreelanceService {
+  categories: [FreelanceServiceCategory]
+  concepts: Int
+  deliveryTime: FreelanceServiceDeliveryTime!
+  description: String!
+  examples: [FreelanceServiceAssetEntity]
+  id: Int!
+  revisions: Int
+  title: String!
+  unitAmount: Float!
+  url: String
+  user: User
+}
+
+type FreelanceServiceCategory {
+  id: Int!
+  name: String!
+}
+
+type FreelanceServiceCategoryParent {
+  children: [FreelanceServiceCategory!]!
+  id: Int!
+  name: String!
+}
+
+type FreelanceServiceOptions {
+  assetLimit: Int!
+  categories: [FreelanceServiceCategoryParent!]!
+  categoryLimit: Int!
+  deliveryTimes: [FreelanceServiceDeliveryTime]!
+  serviceLimit: Int!
+}
+
+type FreelanceServiceRequest {
+  clientTimeline: FreelanceServiceDeliveryTimeline
+  company: String
+  freelanceService: FreelanceService
+  status: FreelanceProjectStatus
+}
+
+type Gallery {
+  appUrl: String
+  backgroundImage: ProjectCoverImageSizes!
+  description: String!
+  displayOrder: Int
+  followStatus: Boolean!
+  icons: Icons
+  id: Int
+  label: String
+  projects(after: String, first: Int = 48): GalleryProjectsConnection
+  subcategories: [Subcategory]
+  tint: Colors
+  uniqueSlug: String
+  videoRow: GalleryVideos
+}
+
+type GalleryProjectsConnection {
+  edges: [GalleryProjectsEdge!]!
+  nodes: [Project!]!
+  pageInfo: PageInfo!
+}
+
+type GalleryProjectsEdge {
+  cursor: String!
+  node: Project!
+}
+
+type GalleryVideos {
+  description: String
+  title: String
+  url: String
+  videos: [Video]
+}
+
+type GatekeeperRule {
+  canAccess: Boolean!
+  data: String!
+  hash: String!
+  key: String!
+  redirectUri: String!
+  type: Int!
+  value: Int!
+}
+
+type GenDetectorScore {
+  classLabel: String
+  score: Float
+}
+
+type HireShortcut {
+  creativeField: String!
+  urlPath: String!
+}
+
+type Icons {
+  downloadIcon1x: String
+  downloadIcon2x: String
+}
+
+type IframeEmbedData {
+  embed: String!
+  height: Int!
+  originalEmbed: String!
+  originalHeight: Int!
+  originalWidth: Int!
+  width: Int!
+  widthUnit: String!
+}
+
+type Image {
+  size: String!
+  url: String!
+}
+
+type ImageModule {
+  alignment: String!
+  altText: String
+  altTextForEditor: String
+  autoTags: [AutoTag!]!
+  caiData: String
+  caption: String!
+  captionAlignment: String!
+  captionPlain: String!
+  colors: Colors
+  exifData: exifData!
+  flexHeight: Float!
+  flexWidth: Float!
+  fullBleed: Int
+  genDetectorScore: GenDetectorScore
+  hasCaiData: Boolean!
+  height: Int!
+  id: Int!
+  imageSizes: ProjectModuleImageSizes!
+  isCaiVersion1: Boolean!
+  isLazy: Boolean!
+  latestCaiClaim: CaiClaim
+  nftData: NFT
+  project: Project!
+  projectId: Int!
+  similarStyleImages: [ImageModule]!
+  src: String
+  tags: [String]
+  threeDData: ThreeD
+  url: String!
+  width: Int!
+}
+
+type ImageRendition {
+  height: Int
+  url: String
+  width: Int
+}
+
+type InboxAttachmentPlaceholder {
+  placeholder: String
+}
+
+type InboxFileAttachment {
+  assetId: String!
+  createdOn: Int!
+  """File attachment extension, e.g. jpg"""
+  extension: String
+  messageId: Int!
+  """File attachment MIME type, e.g. image/jpeg"""
+  mimeType: String!
+  renditionUrl: String!
+  size: Int!
+  sourceHeight: Int!
+  sourceWidth: Int!
+  threadId: Int!
+  title: String!
+  userId: Int!
+}
+
+type InboxFileAttachmentConnection {
+  edges: [InboxFileAttachmentEdge!]!
+  nodes: [InboxFileAttachment!]!
+  pageInfo: PageInfo!
+}
+
+type InboxFileAttachmentEdge {
+  cursor: String!
+  node: InboxFileAttachment!
+}
+
+type InboxHireMeData {
+  budget: String
+  company: String
+  currency: String
+  freelanceProjectStatus: HireMeFreelanceProjectStatus
+  freelanceProjectStatusModifiedTime: Int
+  isFreelance: Boolean
+  isFullTime: Boolean
+  location: String
+  remote: Boolean
+  timeline: String
+}
+
+type InboxInvalidFileAttachment {
+  errorMessage: String
+}
+
+type InboxThread {
+  containsInquiry: Boolean!
+  createdOn: Int!
+  fileAttachmentCount: Int!
+  fileAttachments(after: String, first: Int = 25): InboxFileAttachmentConnection
+  id: String!
+  isJob: Boolean!
+  isShortlistedForJob: Boolean!
+  """
+  Intended for single thread queries, do not use for lists of threads. Returns whether the current thread is eligible for video meetings. 
+  """
+  meetingEligibility: MeetingEligibility!
+  messages(
+    after: String
+    first: Int = 80
+    """
+    When true this will provide a default message for job applications without user created messages
+    """
+    usePlaceholderForJobApplications: Boolean = false
+  ): InboxThreadMessageConnection
+  modifiedOn: Int!
+  recipients: [User]!
+  unreadCount: Int!
+}
+
+type InboxThreadCounts {
+  archive: Int!
+  inbox: Int!
+  inquiries: Int!
+}
+
+type InboxThreadMessage {
+  attachments: [InboxMessageAttachment]
+  createdOn: Int!
+  """
+  Indicates that the message has previously uploaded content that has been deleted.
+  """
+  hasDeletedContent: Boolean!
+  id: String!
+  isRead: Boolean!
+  isRisky: Boolean!
+  message: String!
+  sender: User!
+}
+
+type InboxThreadMessageConnection {
+  edges: [InboxThreadMessageEdge!]!
+  nodes: [InboxThreadMessage!]!
+  pageInfo: PageInfo!
+}
+
+type InboxThreadMessageEdge {
+  cursor: String!
+  node: InboxThreadMessage!
+}
+
+type InboxThreadParent {
+  children(after: String, filter: InboxThreadsFilter, first: Int = 20): InboxThreadsConnection
+  count: InboxThreadParentCount
+  entity: InboxThreadParentEntity
+}
+
+type InboxThreadParentCount {
+  new: Int!
+  total: Int!
+}
+
+type InboxThreadParentsConnection {
+  edges: [InboxThreadsEdge!]!
+  nodes: [InboxThreadParent!]!
+  pageInfo: PageInfo!
+}
+
+type InboxThreadsConnection {
+  edges: [InboxThreadsEdge!]!
+  nodes: [InboxThread!]!
+  pageInfo: PageInfo!
+}
+
+type InboxThreadsEdge {
+  cursor: String!
+  node: InboxThread!
+}
+
+type InvalidFreelanceServiceRequest {
+  clientTimeline: InvalidFreelanceServiceDeliveryTimeline
+  company: String
+  id: Int
+}
+
+type InvalidJobMessageAttachment {
+  id: Int!
+}
+
+type Invitations {
+  createdOn: Int!
+  id: Int!
+  message: String!
+  moodboard: Moodboard
+  otherUser: User
+  project: Project
+  subject: String!
+  team: Team
+  type: String!
+}
+
+type Invoice {
+  invoiceUrl: String
+  receiptUrl: String
+}
+
+type JobApplicationCreatedAction {
+  actor: User
+  job: JobItem
+}
+
+type JobApprovedAction {
+  actor: User
+  job: JobItem
+}
+
+type JobCompany {
+  imageSizes: JobCompanyImages
+  name: String
+  url: String!
+}
+
+type JobCompanyImages {
+  size_180: ImageRendition
+  size_max: ImageRendition
+}
+
+type JobCounts {
+  totalFreelanceJobs: Int!
+  totalFullTimeJobs: Int!
+  totalMyJobs: Int!
+}
+
+type JobItem {
+  allowedApplyPlace: JobAllowedApplyPlace!
+  applicationUrl: String
+  applicationsCount: Int!
+  appliedOn: Int
+  archivedOn: Int!
+  company: JobCompany
+  companyType: JobCompanyType!
+  createdOn: Int!
+  creativeFields: [CreativeField!]!
+  creator: User
+  description: String
+  expiresOn: Int!
+  hasApplied: Boolean!
+  id: Int!
+  isApplicantShortlisted: Boolean!
+  isExpired: Boolean!
+  isOwner: Boolean!
+  isPosted: Boolean!
+  isSaved: Boolean!
+  jobStatus: JobStatus!
+  jobType: JobType
+  location: JobLocation
+  locationDisplay: String!
+  modifiedOn: Int!
+  postedOn: Int!
+  remoteStatus: JobRemoteStatus!
+  shortDescription: String
+  slug: String!
+  tags: [Tag!]!
+  title: String!
+  url: String!
+}
+
+type JobItemConnection {
+  edges: [JobItemEdge]!
+  metaContent: JobItemMetaContent!
+  nodes: [JobItem]!
+  pageInfo: PageInfo!
+}
+
+type JobItemEdge {
+  cursor: String!
+  node: JobItem!
+}
+
+type JobItemMetaContent {
+  totalJobs: Int!
+}
+
+type JobLocation {
+  """Specify what city a job is for"""
+  city: String!
+  """Specify what country a job is for"""
+  country: String!
+  """Specify what state a job is for"""
+  state: String!
+}
+
+type LightroomActivityFeedItem {
+  actionTimestamp: Int!
+  actionType: String!
+  actor: User!
+  assetId: String!
+  assetThumbnail: LightroomAssetThumbnail
+  assetType: String!
+}
+
+type LightroomAssetThumbnail {
+  afterUrl: String!
+  beforeUrl: String!
+  height: Int!
+  width: Int!
+}
+
+type LinkedAsset {
+  category: String
+  licenseType: String
+  moduleIds: [Int]!
+  name: String!
+  premium: PremiumStatus!
+  url: String
+}
+
+type LiveStreamAction {
+  actor: User
+  video: UserLivestream
+}
+
+type LivestreamAdminFlag {
+  LIVESTREAM_LOCK: Int!
+  NEEDS_REVIEW: Int!
+}
+
+type MediaCollectionComponent {
+  colors: Colors
+  filename: String!
+  flexHeight: Float!
+  flexWidth: Float!
+  height: Int!
+  id: Int!
+  imageSizes: ProjectModuleImageSizes!
+  moduleId: Int!
+  position: Float!
+  project: Project!
+  projectId: Int!
+  src: String!
+  width: Int!
+}
+
+type MediaCollectionModule {
+  alignment: String!
+  captionAlignment: String!
+  captionPlain: String!
+  collectionType: MediaCollectionType!
+  components: [MediaCollectionComponent!]!
+  fullBleed: Int
+  id: Int!
+  isLazy: Boolean!
+  project: Project!
+  projectId: Int!
+  sortType: MediaCollectionSortType!
+}
+
+type MeetingAttachment {
+  status: MeetingStatus!
+  updatedOn: Int!
+}
+
+type ModuleAddedToCollectionAction {
+  actor: User
+  collection: Moodboard
+  project: Project
+}
+
+type MonthlyStats {
+  thisMonth: MonthlyStatsList
+  thisMonthLastYear: MonthlyStatsList
+}
+
+type MonthlyStatsList {
+  receivedProjectAppreciations: [StatsByDay]
+  receivedProjectViews: [StatsByDay]
+}
+
+type Moodboard {
+  createdOn: Int!
+  creatorId: Int!
+  followerCount: Int!
+  id: Int!
+  isFollowing: Boolean!
+  isOwner: Boolean!
+  items(after: String, first: Int!): MoodboardItemConnection!
+  label: String!
+  modifiedOn: Int!
+  owners: [User]!
+  privacy: String!
+  projectCount: Int!
+  recommendedItems(after: String, first: Int!): MoodboardItemConnection
+  url: String!
+}
+
+type MoodboardItem {
+  entity: MoodboardItemEntity
+  entityType: String!
+  fetchSource: MoodboardItemFetchSourceType
+  flexHeight: Float!
+  flexWidth: Float!
+  height: Int!
+  id: Int!
+  images: [Image]!
+  sizes: MoodboardItemImageSizes!
+  width: Int!
+}
+
+type MoodboardItemConnection {
+  edges: [MoodboardItemEdge]!
+  nodes: [MoodboardItem]!
+  pageInfo: PageInfo!
+}
+
+type MoodboardItemEdge {
+  cursor: String!
+  node: MoodboardItem!
+}
+
+type MultiPartUploadDetails {
+  """Access Key"""
+  accessKey: String!
+  """Asset ARN"""
+  assetARN: String!
+  """File name"""
+  fileName: String!
+  """Maximum number of parts"""
+  maximumParts: Int!
+  """Minimum part size"""
+  minimumPartSize: Int!
+  """Multipart Href"""
+  multipartHref: String!
+  """Region"""
+  region: String!
+  """Secret Key"""
+  secretKey: String!
+  """Session token"""
+  sessionToken: String!
+  """Upload Id"""
+  uploadId: String!
+}
+
+type Mutation {
+  acceptFreelanceProjectProposal(
+    """Freelance Project Id"""
+    id: Int!
+  ): FreelanceProject
+  """Accepts an invitation for a user"""
+  acceptInvitation(id: Int!): Int
+  """
+  Add a file attachment to the specific message on behalf of the authenticated user.
+  """
+  addFileAttachmentToMessage(
+    """Message Id (required if `threadId` is null)"""
+    messageId: Int
+    """The information about file attachment"""
+    params: CreateInboxFileAttachmentParams!
+    """Thread Id (required if `messageId` is null)"""
+    threadId: Int
+  ): AddInboxFileAttachmentResponse
+  """
+  Add a job applicant to job shortlist on behalf of the authenticated user.
+  """
+  addToShortlist(
+    """Applicant Id"""
+    applicantId: Int!
+    """Job Id"""
+    jobId: Int!
+  ): ApplicantShortlistResponse
+  applyToJob(
+    """Job Id"""
+    id: Int!
+    """Message sent with job application"""
+    message: String
+  ): ApplyToJobResponse
+  """
+  Archive up to 20 threads. A list of successfully archived thread ids is returned.
+  """
+  archiveInboxThreads(threadIds: [String!]!): [String]
+  """Block another user"""
+  blockUser(blockeeAdobeId: String, blockeeUserId: Int, blockeeUsername: String): User
+  """Sets the price of the subscription for the authenticated user"""
+  cacheSubscriptionPrice(price: Int!): CachedSubscriptionPrice
+  """Cancel a freelance project"""
+  cancelFreelanceProjectProposal(
+    """Freelance Project Id"""
+    id: Int!
+    message: String
+  ): FreelanceProject
+  cloneProject(id: Int!): CloneProjectResponse
+  """check and connect a user nft wallet if not connected already"""
+  connectNFTWalletForUser: WalletConnection
+  """Create a new freelance project"""
+  createFreelanceProject(params: CreateFreelanceProjectParams!): FreelanceProject
+  """Create a new freelance service"""
+  createFreelanceService(params: CreateFreelanceServiceParams!): CreateFreelanceServiceResponse
+  """Create an inbox message"""
+  createInboxMessage(message: String!, storySegmentId: Int, threadId: String!, type: InboxThreadMessageType): InboxThreadMessage
+  """Create an inbox thread or add message to an existing thread"""
+  createInboxThread(
+    freelanceServiceInquiry: FreelanceServiceInquiryParams
+    hireMeData: CreateInboxHireMeDataParams
+    message: String!
+    recipients: Recipients!
+    """
+    When set to true, signup will be attempted for the user if they are not a member of Behance
+    """
+    signUpOnSend: Boolean = false
+    storySegmentId: Int
+    type: InboxThreadMessageType
+  ): InboxThread
+  createJob(params: CreateJobParams!): CreateJobResponse
+  createProjectComment(comment: ProjectCommentInput!, projectId: Int!): CreateProjectCommentResponse
+  """Create a setup intent for a subscriber"""
+  createSetupIntent: PaymentSetupIntent
+  """Create a Source File"""
+  createSourceFile(params: CreateSourceFileParams!): SourceFile
+  """Create a Stripe Account for a creator"""
+  createStripeAccount: StripeAccount
+  """Create a Stripe Subscription Product for a creator"""
+  createSubscriptionProduct(currency: String!, unitAmount: Int!): SubscriptionProduct
+  createTag(category: TagCategory!, title: Title!): Tag
+  """Decline a payment for freelance project"""
+  declineFreelancePayment(message: String!, paymentId: Int!): FreelancePayment
+  declineFreelanceProjectInquiry(
+    message: String!
+    """The message id that originated the creation of this project"""
+    originMessageId: String!
+  ): InboxThreadMessage
+  """Decline a freelance project proposal"""
+  declineFreelanceProjectProposal(
+    """Freelance Project Id"""
+    id: Int!
+    message: String!
+  ): FreelanceProject
+  """Declines an invitation for a user"""
+  declineInvitation(id: Int!): Int
+  deleteCreatorSubscription(contentPrivacy: PremiumContentPrivacy!): SubscriptionProduct
+  """Delete a freelance service"""
+  deleteFreelanceService(
+    """Freelance Service Id"""
+    id: Int!
+  ): DeleteFreelanceServiceResponse
+  """Delete an inbox thread"""
+  deleteInboxThread(threadId: String!): String
+  """
+  Delete up to 20 threads. A list of successfully deleted thread ids is returned.
+  """
+  deleteInboxThreads(threadIds: [String!]!): [String]
+  """Delete a job on behalf of the authenticated user."""
+  deleteJob(
+    """Job Id"""
+    id: Int!
+  ): DeleteJobResponse
+  """delete a user avatar image"""
+  deleteProfileAvatar: Viewer
+  """delete a user profile banner image"""
+  deleteProfileBanner: Viewer
+  """Deletes a project"""
+  deleteProject(id: Int!): Int
+  """Delete a project comment on behalf of the authenticated user."""
+  deleteProjectComment(
+    """A project comment id"""
+    id: Int!
+  ): DeleteProjectCommentResponse
+  """Delete a Source File"""
+  deleteSourceFile(sourceFileId: Int!): DeleteSourceFileResponse
+  disconnectNFTWalletForUserByAddress(address: String!): WalletConnection
+  """Edit an existing freelance service"""
+  editFreelanceService(
+    """Freelance Service Id"""
+    id: Int!
+    params: CreateFreelanceServiceParams!
+  ): EditFreelanceServiceResponse
+  """
+  Specify a project to exclude from the profile (Only supported for premium projects)
+  """
+  excludePremiumProjectFromProfile(id: Int!): Project
+  """Follows the specified gallery for the logged in user"""
+  followGallery(slug: String!): FollowGalleryResponse
+  """Follows the specified gallery subcategory for the logged in user"""
+  followGallerySubcategory(parentSlug: String!, slug: String!): FollowSubcategoryResponse
+  """Follows the specified tag for the logged in user"""
+  followTag(id: Int!): Int
+  """Follows the specified team for the logged in user"""
+  followTeam(id: Int!): Team
+  """Follows a user"""
+  followUser(id: Int!): FollowUserResponse
+  hideNftsByWalletAddress(address: String!): User
+  """check and import a user nft wallet if not imported already"""
+  importNFTWalletForUser: User
+  """
+  Specify that a project can be shown on a profile (Only supported for premium projects)
+  """
+  includePremiumProjectInProfile(id: Int!): Project
+  joinMeeting(threadId: String!): ChimeMeeting
+  makeFreelancePayment(paymentId: Int!, paymentMethodId: String!): FreelancePayment
+  """Make multiple livestreams premium"""
+  makeLivestreamsPremium(livestreamVideoIds: [Int!]!): [UserLivestream]!
+  """Make multiple projects premium"""
+  makeProjectsPremium(projectIds: [Int!]!): [Project]!
+  makeSourceFilePurchase(paymentMethodId: String!, sourceFileId: Int!): SourceFilePurchase
+  """Mark Adobe Video as viewed"""
+  markAdobeVideoAsViewed(video_id: VideoId!): AdobeLiveVideo
+  markAllNotificationsAsRead: Boolean
+  """Mark multiple threads as read"""
+  markInboxThreadsAsRead(threadIds: [String!]!): [InboxThread!]
+  """Mark inquiry notifications as read for the logged in user"""
+  markInquiryNotificationsAsRead: Boolean!
+  markNotificationsAsRead(notification_ids: [Int]!): Boolean
+  """Mute the specified tag for the logged in user"""
+  muteTag(id: Int!): Int
+  """
+  Pin a project to the subscription overview. Unpins already pinned project.
+  """
+  pinSubscriptionProject(projectId: Int!): Project
+  """Remove a file attachment from an inbox message"""
+  removeFileAttachment(fileAssetId: String!): String
+  """
+  Remove a job applicant from a job shortlist on behalf of the authenticated user.
+  """
+  removeFromShortlist(
+    """Applicant Id"""
+    applicantId: Int!
+    """Job Id"""
+    jobId: Int!
+  ): ApplicantShortlistResponse
+  """
+  Remove an inbox message and all associated file attachments from a thread by message id. Returns the message id that was deleted.
+  """
+  removeInboxMessage(messageId: Int!): Int!
+  """Removes a user nft project along with all the assets"""
+  removeNFTProjectForUser: WalletConnection
+  """Remove a saved job on behalf of the authenticated user."""
+  removeSavedJob(
+    """Job Id"""
+    id: Int!
+  ): RemoveSavedJobResponse
+  """Remove a user's specified Single Use"""
+  removeUserFlag(flag: String!): UserFlag
+  """Reorder an existing freelance service"""
+  reorderFreelanceService(
+    """
+    The id of the freelance service that the specified service will be moved after. Not specifying an after id will set the service as the first item.
+    """
+    afterId: Int
+    """Freelance Service Id"""
+    id: Int!
+  ): EditFreelanceServiceResponse
+  """Reorders the profile projects for a user"""
+  reorderProfileProjects(afterId: Int, id: Int!): ReorderProfileProjectsResponse
+  """Reports a user."""
+  reportUser(
+    """Id of the user to report."""
+    id: Int!
+    """Additional message when reporting user."""
+    message: ReportUserMessage
+    """Reason for reporting the user."""
+    reason: ReportUserReasons!
+  ): ReportUserResponse
+  requestFinalFreelancePayment(projectId: ID!): FreelancePayment
+  """
+  Activates automatic renewal of the users subscription to the specified creator
+  """
+  resubscribeToCreator(creator_id: Int!): Subscription
+  """Review freelance project"""
+  reviewFreelanceProject(id: Int!, review: String!): FreelanceProjectReview
+  """Mark up to 100 ids as seen"""
+  saveForYouFeedContentSeen(
+    """The list of entities to be marked as seen"""
+    entities: [ForYouFeedSeenEntity!]
+    """Deprecated: use "entities" instead"""
+    projectIds: [Int!]
+  ): SaveForYouFeedContentSeen
+  """Save a job on behalf of the authenticated user."""
+  saveJob(
+    """Job Id"""
+    id: Int!
+  ): SaveJobResponse
+  """Create or edit a user's Hire Me settings"""
+  saveUserAvailabilityInfo(availabilityTimeline: AvailabilityTimelineOption, buttonCTAType: AvailabilityButtonCTAType!, compensationMin: Float, currency: AvailabilityCurrencyType!, isAvailableFreelance: Boolean!, isAvailableFullTime: Boolean!, isLookingForRemote: Boolean!, isOpenToRelocation: Boolean!): UserAvailabilityInfo
+  """Sends an analytics request"""
+  sendAnalytic(analyticType: AnalyticType!, eventExtJson: String = "", eventFeatureName: String = "", eventHeight: Int!, eventMessage: String = "", eventPageName: String!, eventReferrer: String = "", eventUri: String!, eventWidth: Int!): SendAnalyticsResponse
+  """Set the visibility of a user's NFT"""
+  setNFTToBeHidden(moduleId: Int!): NFT
+  """Set the visibility of a user's NFT"""
+  setNFTToBeVisibile(moduleId: Int!): NFT
+  """Hide a Stock asset on the user's profile"""
+  setStockAssetToBeHidden(stockAssetId: String!): StockAssetProfileVisibility
+  """Unhide a Stock asset on the user's profile"""
+  setStockAssetToBeVisible(stockAssetId: String!): StockAssetProfileVisibility
+  """Set a user's specified Single Use"""
+  setUserFlag(flag: String!): UserFlag
+  showNftsByWalletAddress(address: String!): User
+  """Finalize a multipart upload for a source file > 10 MB"""
+  sourceFileFinalizeMultiPartUpload(accessKey: String!, assetARN: String!, contentLength: Int!, contentMd5: String!, contentType: String!, path: String!, secretKey: String!, segments: [MultiPartSegment]!, sessionToken: String!, uploadId: String!): UploadedSourceFileDetails
+  """Initialize a multipart upload for a source file > 10 MB"""
+  sourceFileInitializeMultiPartUpload(
+    contentLength: Int!
+    contentType: String!
+    """
+    The prefix used for a new auto-generated unique file name. `SOURCE_FILE` is used by default.
+    """
+    filePrefix: FileUploadPrefix
+    path: String!
+  ): MultiPartUploadDetails
+  """
+  Request a direct upload url for a source file < 10 MB. Make a PUT request to the returned URL with the following headers: "X-api-key: {api key}", "Authorization: Bearer {user bearer token}", "Accept: application/vnd.adobe.file+json", "Content-length: {content-length of the file uploaded}", "Content-type: {content-type of the file uploaded}"
+  """
+  sourceFileRequestDirectUploadUrl(
+    fileName: String!
+    """
+    The prefix used for a new auto-generated unique file name. `SOURCE_FILE` is used by default.
+    """
+    filePrefix: FileUploadPrefix
+  ): SourceFileDirectUploadUrl
+  """Request a temporary download url for a source file"""
+  sourceFileRequestDownloadUrl(sourceFileId: Int!): SourceFileDownloadUrl
+  """Subscribes the logged in user to the specified creator"""
+  subscribeToCreator(creator_id: Int!): Subscription
+  """
+  Subscribe to the web push notifications about a new content from the user defined in the arguments on behalf of the authenticated user.
+  """
+  subscribeToWebPushNotifications(
+    notificationType: NotificationType!
+    """JSON encoded browser specific subscription object"""
+    subscription: String
+    userId: Int
+    username: String
+  ): WebPush
+  """
+  Sets super signal relation between a user and a project. Deletes relation when "remove" is true
+  """
+  superSignal(projectId: Int!, remove: Boolean): Int
+  """Transfer ownership of a project to the first co-owner"""
+  transferProjectOwnership(id: Int!): Project
+  """
+  Unarchive up to 20 threads. A list of successfully unarchived thread ids is returned.
+  """
+  unarchiveInboxThreads(threadIds: [String!]!): [String]
+  """Unfollows the specified gallery for the logged in user"""
+  unfollowGallery(slug: String!): FollowGalleryResponse
+  """Unfollows the specified gallery subcategory for the logged in user"""
+  unfollowGallerySubcategory(parentSlug: String!, slug: String!): FollowSubcategoryResponse
+  """Unfollows the specified tag for the logged in user"""
+  unfollowTag(id: Int!): Int
+  """Unfollows the specified team for the logged in user"""
+  unfollowTeam(id: Int!): Team
+  """Unfollows a user"""
+  unfollowUser(id: Int!): FollowUserResponse
+  """Unpins a project from the subscription overview."""
+  unpinSubscriptionProject(projectId: Int!): Project
+  """
+  Cancels all of the logged in users subscriptions and removes their saved card info
+  """
+  unsubscribeAndRemoveCard: StripePaymentMethod
+  """
+  Cancels the logged in users subscription to the specified creator at the end of the billing cycle
+  """
+  unsubscribeFromCreator(creator_id: Int!): Subscription
+  """
+  Unsubscribe from the web push notifications about a new context from the user defined in the arguments on behalf of the authenticated user.
+  """
+  unsubscribeFromWebPushNotifications(notificationType: NotificationType!, userId: Int, username: String): WebPush
+  """
+  Update the setting that determines if the logged-in user would like to receive direct messages from all users or only followed users
+  """
+  updateAllowsContactFromAnyoneSetting(value: Boolean!): AllowsContactFromAnyone
+  """
+  Updates a user's settings for allowing comment mentions from other users
+  """
+  updateCommentMentionsSettings(setting: CommentMentionsSetting!): User
+  """Update the specific job on behalf of the authenticated user."""
+  updateJob(id: Int!, params: UpdateJobParams!): UpdateJobResponse
+  """update a user avatar image"""
+  updateProfileAvatar(crop_x: Int!, crop_x2: Int!, crop_y: Int!, crop_y2: Int!, imageUrl: String!): Viewer
+  """update a user banner image"""
+  updateProfileBanner(bannerUrl: String!, height: Int!, width: Int!, x: Int!, y: Int!): Viewer
+  """Update a users profile data"""
+  updateProfileData(city: city_name, company: company, country: country_name, firstName: firstName, lastName: lastName, locationId: locationId, occupation: occupation, references: references, sections: sections, socialReferences: socialReferences, state: state_name, teams: teams, website: website): Viewer
+  """
+  === Not ready yet! ===
+  
+  Update the specific project on behalf of the authenticated user.
+  """
+  updateProject(params: UpdateProjectParams!, projectId: Int!): UpdateProjectResponse
+  """Update a Source File"""
+  updateSourceFile(params: UpdateSourceFileParams!): SourceFile
+  """Update the payment method used for subscriptions"""
+  updateSubscriptionPaymentMethod(payment_method_id: String!): StripePaymentMethod
+}
+
+type NFT {
+  chain: String!
+  contractAddress: String
+  contractAddressUrl: String
+  createdOn: Int @deprecated(reason: "No longer used")
+  creatorAddress: String
+  creatorName: String
+  creatorUrl: String
+  description: String
+  imageUrl: String
+  isHidden: Boolean
+  isInUserNftProject: Boolean!
+  name: String
+  tokenId: String
+  videoUrl: String
+}
+
+type NFTWallet {
+  address: String!
+  chain: String!
+}
+
+type NetworkFeedItem {
+  action: String!
+  actionTimestamp: Int!
+  actor: User!
+  entity: ForYouFeedItemEntity!
+  project: Project!
+}
+
+type Notification {
+  action: NotificationAction!
+  createdOn: Int!
+  id: String!
+  readOn: Int!
+}
+
+type NotificationAction {
+  entities: ActionDataEntities
+  id: String!
+  key: String!
+}
+
+type NotificationsCount {
+  countByType: [NotificationsTypeCount]!
+  total: Int!
+}
+
+type NotificationsTypeCount {
+  count: Int!
+  type: String!
+}
+
+type OrderedFonts {
+  """Font style"""
+  css: String!
+  """Font label"""
+  label: String!
+  """Indicates if it is a regular font type"""
+  regular: Boolean!
+  """Indicates if it is a user typekit font type"""
+  userTypekit: Boolean!
+  """Font ID"""
+  value: Boolean!
+}
+
+type PageInfo {
+  endCursor: String
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+}
+
+type PaymentIntent {
+  clientSecret: String
+  nextAction: String
+  status: String
+  url: String
+}
+
+type PaymentSetupIntent {
+  clientSecret: String!
+}
+
+type Payments {
+  freelancePaymentInvoice(id: Int!): Invoice
+  freelancePayments(after: String, first: Int = 20): FreelancePaymentConnection
+  """The total earnings in USD from the logged in user's freelance projects"""
+  freelanceProjectEarnings(
+    """Filter total earnings in the past X days"""
+    daysAgo: Int
+  ): String!
+  freelanceProjectPaymentPlan(
+    """Amount billed by creative"""
+    projectAmount: Int!
+    """Percentage required to be paid upfront"""
+    upfrontPercent: Int!
+  ): FreelanceProjectPaymentPlan
+  sourceFilePurchaseInvoice(purchaseId: Int!): Invoice
+}
+
+type PostConnection {
+  edges: [PostEdge!]!
+  nodes: [BlogPost!]!
+  pageInfo: PageInfo!
+}
+
+type PostEdge {
+  cursor: String!
+  node: BlogPost!
+}
+
+type PremiumContentFeedConnection {
+  edges: [PremiumContentFeedEdge!]!
+  nodes: [PremiumContentFeedItem!]!
+  pageInfo: PageInfo!
+}
+
+type PremiumContentFeedEdge {
+  cursor: String!
+  node: PremiumContentFeedItem!
+}
+
+type ProfileChecklist {
+  hasApp: Boolean
+  hasCoverImage: Boolean
+  hasEditedAvailability: Boolean
+  hasProfilePhoto: Boolean!
+  hasPublishedProject: Boolean
+  hasUsername: Boolean!
+  shouldHide: Boolean!
+}
+
+type ProfileProjectsConnection {
+  edges: [ProfileProjectsEdge]!
+  nodes: [Project]!
+  pageInfo: PageInfo!
+}
+
+type ProfileProjectsEdge {
+  cursor: String!
+  node: Project!
+}
+
+type ProfileProjectsWithPurchasedSourceFilesConnection {
+  edges: [ProfileProjectsWithPurchasedSourceFilesEdge]!
+  nodes: [Project]!
+  pageInfo: PageInfo!
+}
+
+type ProfileProjectsWithPurchasedSourceFilesEdge {
+  cursor: String!
+  node: Project!
+}
+
+type ProfileProjectsWithSourceFilesConnection {
+  edges: [ProfileProjectsWithSourceFilesEdge]!
+  nodes: [Project]!
+  pageInfo: PageInfo!
+}
+
+type ProfileProjectsWithSourceFilesEdge {
+  cursor: String!
+  node: Project!
+}
+
+type ProfileTab {
+  shouldShow: Boolean!
+  title: ProfileTabTitle!
+}
+
+type Project {
+  adminFlags: ProjectAdminFlags
+  adminNotices: [ProjectAdminNotice!]!
+  aeroData: ProjectAeroData
+  agencies: [Tag!]!
+  allModules: [ProjectModule!]!
+  autoTags: [AutoTag!]!
+  brands: [Tag!]!
+  canvasWidth: Int
+  colors: Colors
+  comments(
+    after: String
+    """Max items for one page is 24"""
+    first: Int = 24
+  ): ProjectCommentConnection!
+  conceivedOn: Int!
+  coverData: ProjectCover!
+  covers: ProjectCoverImageSizes!
+  createdOn: Int!
+  creator: User!
+  creatorId: Int!
+  """
+  The list of Behance users who should be recognized in the current project.
+  """
+  credits: [User!]!
+  description: String!
+  descriptionShortened: String!
+  editUrl: String!
+  editorVersion: Int!
+  features: [ProjectFeature]
+  fields: [project_fields]
+  hasMatureContent: Boolean!
+  haveOwnersRecentlyGottenSocialEmail: Boolean!
+  id: Int!
+  isAppreciated: Boolean!
+  isCommentingAllowed: Boolean!
+  isFeatured: Boolean!
+  isFounder: Boolean!
+  isHiddenFromWorkTab: Boolean!
+  isMatureReviewSubmitted: Boolean
+  isOwner: Int!
+  isPinnedToSubscriptionOverview: Boolean!
+  isPrivate: Boolean!
+  isPublished: Boolean!
+  isSenseiRecommended: Boolean
+  license: ProjectLicense!
+  linkedAssets: [LinkedAsset!]!
+  linkedAssetsCount: Int!
+  matureAccess: String!
+  modifiedOn: Int!
+  modules(
+    after: String
+    """Max items for one page is 24"""
+    first: Int = 24
+  ): ProjectModuleConnection!
+  name: String!
+  networks: [UserNetworks]!
+  owners: [User]!
+  pendingCoowners: [User]
+  premium: Int!
+  privacyLevel: ProjectPrivacyLevel!
+  publishedOn: Int!
+  schools: [Tag!]!
+  shortUrl: String!
+  slug: String!
+  sourceFiles: [SourceFile]
+  stats: project_stats
+  styles: ProjectStyle
+  stylesInline: String!
+  tags: [Tag!]!
+  teams: [TeamItem!]!
+  tools: [Tool]
+  url: String!
+}
+
+type ProjectAddedToCollectionAction {
+  actor: User
+  collection: Moodboard
+  project: Project
+}
+
+type ProjectAdminFlags {
+  dmca_lock: Int
+  eu_ip_lock: Int
+  flagged_lock: Int
+  mature_lock: Int
+  privacy_lock: Int
+  privacy_violation_lock: Int
+  spam_lock: Int
+  trademark_lock: Int
+}
+
+type ProjectAdminNotice {
+  body: String!
+  isReviewable: Boolean!
+  title: String!
+}
+
+type ProjectAeroData {
+  externalUrl: String
+  internalUrl: String
+  urn: String
+}
+
+type ProjectComment {
+  comment: String!
+  id: Int!
+  permissions: ProjectCommentPermissions!
+  postedOn: Int!
+  user: User
+}
+
+type ProjectCommentAction {
+  actor: User
+  comment: ProjectComment
+  project: Project
+}
+
+type ProjectCommentConnection {
+  edges: [ProjectCommentEdge]!
+  nodes: [ProjectComment]!
+  pageInfo: PageInfo!
+}
+
+type ProjectCommentEdge {
+  cursor: String!
+  node: ProjectComment!
+}
+
+type ProjectCommentPermissions {
+  """If an authenticated user can flag a comment."""
+  canFlag: Boolean!
+  """If an authenticated user can remove a comment."""
+  canRemove: Boolean!
+}
+
+type ProjectCover {
+  """Project cover scale"""
+  coverScale: Float!
+  """x-coordinate of the Project cover"""
+  coverX: Int!
+  """y-coordinate of the project cover"""
+  coverY: Int!
+}
+
+type ProjectCoverImageSizes {
+  size_115: ImageRendition
+  size_115_opt: ImageRendition
+  size_115_webp: ImageRendition
+  size_202: ImageRendition
+  size_202_opt: ImageRendition
+  size_202_webp: ImageRendition
+  size_230: ImageRendition
+  size_230_opt: ImageRendition
+  size_230_webp: ImageRendition
+  size_404: ImageRendition
+  size_404_opt: ImageRendition
+  size_404_webp: ImageRendition
+  size_808: ImageRendition
+  size_808_opt: ImageRendition
+  size_808_webp: ImageRendition
+  size_max_808: ImageRendition
+  size_max_808_opt: ImageRendition
+  size_max_808_webp: ImageRendition
+  size_original: ImageRendition
+  size_original_opt: ImageRendition
+  size_original_webp: ImageRendition
+}
+
+type ProjectEditorConfig {
+  """Allowed extensions for entity types"""
+  allowedExtensions: AllowedExtensions!
+  """Allowed MIME types for source files"""
+  allowedSourceFileMimeTypes: [String!]
+  """Maximum Project Canvas width measured in pixels"""
+  canvasMaxWidth: Int!
+  """Padding around project canvas measured in pixels"""
+  canvasPadding: Int!
+  """Endpoint to transform embed code"""
+  embedTransformsEndpoint: String!
+  """Font configuration"""
+  fontConfig: FontConfig!
+  """Flag indicating if CCV is disabled"""
+  hasCCV: Boolean!
+  """Flag indicating if lightroom is disabled"""
+  hasLightroom: Boolean!
+  """Lightroom endpoint"""
+  lightroomEndpoint: String!
+  """Allowed size limits for entity types"""
+  sizeLimits: SizeLimits!
+  """Source File upload limit"""
+  sourceFileSizeLimit: Int!
+  """Substance upload endpoint"""
+  substanceUploadEndpoint: String!
+  """Localized translations for threeD asset types"""
+  threeDAssetTypes: ThreeDAssetTypes!
+  """Mapping for threeD file extensions and threeD asset types"""
+  threeDFileExtensionToAssetTypeMap: ThreeDFileExtensionToAssetTypeMap!
+}
+
+type ProjectFeature {
+  """
+  Will be null if returning site info only and not mapped to a specific project feature.
+  """
+  featuredOn: Int
+  name: String!
+  networkId: Int!
+  parentId: Int!
+  ribbon: Ribbon!
+  url: String!
+}
+
+type ProjectLicense {
+  description: String
+  id: Int
+  images: [String]
+  label: String
+  license: String
+  text: String
+  url: String
+}
+
+type ProjectModuleConnection {
+  edges: [ProjectModuleEdge]!
+  nodes: [ProjectModule]!
+  pageInfo: PageInfo!
+}
+
+type ProjectModuleEdge {
+  cursor: String!
+  node: ProjectModule!
+}
+
+type ProjectModuleImageSizes {
+  size_1400: ImageRendition
+  size_1400_opt_1: ImageRendition
+  size_1400_opt_1_still: ImageRendition
+  size_1400_still: ImageRendition
+  size_1400_webp: ImageRendition
+  size_158_still: ImageRendition
+  size_2800: ImageRendition
+  size_2800_opt_1: ImageRendition
+  size_2800_opt_1_still: ImageRendition
+  size_2800_still: ImageRendition
+  size_2800_webp: ImageRendition
+  size_316_still: ImageRendition
+  size_632_still: ImageRendition
+  size_disp: ImageRendition
+  size_disp_still: ImageRendition
+  size_disp_webp: ImageRendition
+  size_fs: ImageRendition
+  size_fs_still: ImageRendition
+  size_fs_webp: ImageRendition
+  size_hd: ImageRendition
+  size_hd_still: ImageRendition
+  size_hd_webp: ImageRendition
+  size_max_1200: ImageRendition
+  size_max_1200_still: ImageRendition
+  size_max_1200_webp: ImageRendition
+  size_max_158: ImageRendition
+  size_max_158_webp: ImageRendition
+  size_max_316: ImageRendition
+  size_max_316_webp: ImageRendition
+  size_max_3840: ImageRendition
+  size_max_3840_still: ImageRendition
+  size_max_3840_webp: ImageRendition
+  size_max_632: ImageRendition
+  size_max_632_webp: ImageRendition
+  size_original: ImageRendition
+}
+
+type ProjectModuleInvalidInputError {
+  errorMessage: String!
+  """The ID of the module where an error happened."""
+  id: Int!
+}
+
+type ProjectStats {
+  appreciations: Int!
+  comments: Int!
+  project: Project
+  views: Int!
+  viewsByTimestamp: [StatsByDay]
+}
+
+type ProjectStatsConnection {
+  edges: [ProjectStatsEdge]!
+  nodes: [ProjectStats]!
+  pageInfo: PageInfo!
+}
+
+type ProjectStatsEdge {
+  cursor: String!
+  node: ProjectStats!
+}
+
+type ProjectStatsTimeFrames {
+  all: Int
+  month: Int
+  today: Int
+  week: Int
+}
+
+type ProjectStyle {
+  background: ProjectStyleBackground
+  divider: ProjectStyleDivider
+  spacing: ProjectStyleSpacing
+  text: ProjectStyleText
+}
+
+type ProjectStyleBackground {
+  color: String!
+  image: ProjectStyleBackgroundImage
+}
+
+type ProjectStyleBackgroundImage {
+  name: String!
+  position: String!
+  repeat: String!
+  url: String!
+}
+
+type ProjectStyleDivider {
+  borderStyle: String
+  borderWidth: String
+  display: String
+  fontSize: String
+  height: String
+  lineHeight: String
+  margin: String
+  position: String
+  top: String
+}
+
+type ProjectStyleSpacing {
+  moduleBottomMargin: String
+  projectTopMargin: String
+}
+
+type ProjectStyleText {
+  caption: ProjectStyleTextCss
+  link: ProjectStyleTextCss
+  paragraph: ProjectStyleTextCss
+  subtitle: ProjectStyleTextCss
+  title: ProjectStyleTextCss
+}
+
+type ProjectStyleTextCss {
+  color: String
+  display: String
+  fontFamily: String
+  fontSize: String
+  fontStyle: String
+  fontWeight: String
+  lineHeight: String
+  textAlign: String
+  textDecoration: String
+  textTransform: String
+}
+
+type ProjectTagInvalidInputError {
+  errorMessage: String!
+  tagName: String!
+}
+
+type PsxActivityFeedItem {
+  actionTimestamp: Int!
+  actionType: String!
+  actor: User!
+  assetId: String!
+  assetThumbnail: PsxAssetThumbnail
+  assetType: String!
+}
+
+type PsxAssetThumbnail {
+  height: Int!
+  url: String!
+  width: Int!
+}
+
+type PublicFlags {
+  hasDisabledServicesRow: Boolean!
+}
+
+type PulsePoints {
+  displayAppreciate: Boolean!
+  displayFollow: Boolean!
+  displaySiblingArrow: Boolean!
+}
+
+type Query {
+  adobeLiveVideo(id: VideoId!): AdobeLiveVideo
+  adobeOffers(country: String): [AdobeOffer!]!
+  announcements(
+    """
+    If true, will fetch all announcements, even non-live announcements. Requires user to be an admin.
+    """
+    shouldFetchAll: Boolean = false
+  ): [Announcement]
+  assets(after: String, filter: AssetSearchFilter, first: Int = 10, query: query): AssetConnection
+  blogFeaturedCreatives(after: String, first: Int = 10): BlogFeaturedCreativeConnection
+  blogPosts(
+    after: String
+    blogSlug: BlogSlug
+    categorySlug: CategorySlug
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 10
+    postType: BlogPostType = BLOG_POST
+    sortTypes: [BlogSortType]
+  ): PostConnection
+  bulkUserStats(
+    """
+    This will accept up to 100 Adobe ids. Any id past 100 will be disregarded.
+    """
+    adobeIds: [String]
+    """
+    This will accept up to 100 Behance user ids. Any id past 100 will be disregarded.
+    """
+    userIds: [Int]
+  ): [UserStat]
+  """Returns subscription creators to display in for you and galleries"""
+  featuredSubscriptionCreators: [User!]
+  forYouFeed(
+    after: String
+    """
+    List of entities to exclude from the results (max 1000 ids, any additional will be ignored).
+    """
+    excludeEntities: [ForYouFeedExcludeEntity!]
+    """
+    Deprecated: use `excludeEntities` instead. This is ignored if `excludeEntities` is used.
+    """
+    excludeProjectIds: [Int]
+    """Entities of what types should be returned extra"""
+    extraEntityTypes: [ForYouFeedItemEntityType!]
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+    """List of categories to simulate the viewer is following."""
+    followedCategorySlugs: [String]
+  ): ForYouFeedItemConnection
+  """Options for creating a freelance service"""
+  freelanceServiceOptions: FreelanceServiceOptions!
+  galleries: [Gallery]
+  gallery(slug: String!): Gallery
+  gallerySubcategory(parentSlug: String!, slug: String!): Subcategory
+  gatekeeperRules: [GatekeeperRule]
+  getImageDuplicates(maxResults: Int, score: Float, threshold: Float, url: url!): [String]
+  iframeEmbedData(
+    """Embed code"""
+    embed: EmbedMediaCode!
+  ): IframeEmbedData
+  imageModule(id: ModuleId): ImageModule
+  """Returns a temporary download url to inbox file attachment."""
+  inboxFileAttachmentDownloadUrl(assetId: String!): String!
+  isProjectAssetUrlSafe(url: url): Boolean
+  isUrlSafe(url: url): Boolean
+  job(
+    """Job ID as integer value"""
+    id: JobId!
+  ): JobItem
+  jobCounts: JobCounts
+  jobs(
+    after: String
+    filter: JobSearchFilter
+    """
+    Max items for one page is 48. If "first" is set to more than that, it will only fetch 48 items
+    """
+    first: Int = 48
+    query: query
+  ): JobItemConnection
+  lightroomActivityFeed(
+    after: String
+    filterByAsset: LightroomAssetType
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+  ): UserLightroomActivityFeedConnection
+  moodboard(id: Int!): Moodboard
+  moodboards(
+    """
+    This will accept up to 25 moodboard ids. Any id past 25 will be disregarded.
+    """
+    ids: [Int]!
+  ): [Moodboard]!
+  networkFeed(
+    after: String
+    """Entities of what types should be returned extra"""
+    extraEntityTypes: [ForYouFeedItemEntityType!]
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+  ): UserNetworkFeedConnection
+  nft(contractAddress: String!, tokenId: String!): NFT
+  notifications(
+    action_set: String
+    """Offset timestamp. Cannot be combined with onset_ts."""
+    offset_ts: Int
+    """Onset timestamp. Cannot be combined with offset_ts."""
+    onset_ts: Int
+    per_page: Int = 20
+    persistent_only: Boolean = false
+  ): [Notification]
+  onboardingCategories(
+    """Specifies the logic how the onboarding categories are chosen"""
+    viewType: OnboardingViewType = FANCY
+  ): [OnboardingCategory]
+  project(
+    """Project ID as integer value"""
+    id: ProjectId!
+  ): Project
+  projectModule(id: ModuleId): ProjectModule
+  projectTags(
+    """This will accept up to 100 ids. Any id past 100 will be disregarded."""
+    ids: [Int]!
+  ): [Tag]
+  projects(
+    """
+    This will accept up to 25 project ids. Any id past 25 will be disregarded.
+    """
+    ids: [Int]!
+  ): [Project]!
+  psxActivityFeed(
+    after: String
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+  ): UserPsxActivityFeedConnection
+  search(after: String, filter: SearchResultFilter, first: Int!, query: query, type: SearchType!): SearchResultItemConnection
+  """Fetches pre-defined filter values for search"""
+  searchFilters: SearchFilters!
+  """
+  Return related shortcuts to a search input for display of quick actions
+  """
+  searchShortcuts(
+    first: Int
+    """The search query"""
+    query: String!
+    types: [SearchShortcutType]
+  ): [SearchShortcut!]!
+  """Fetches recommended auto-completed search terms for a given input."""
+  searchTermSuggestions(
+    """Max limit value is 100"""
+    limit: Int = 10
+    """
+    When the term hits this amount of characters, recommended terms are returned instead of basic auto-complete. A value of -1 will disable the recommendation portion of this algo.
+    """
+    recommendationsStartCharacterNum: Int = 3
+    """
+    If left empty, will return dynamic or static suggestions based on auth status. For characters less than the value of recommendationsStartCharacterNum, it does a basic prefix-based ElasticSearch lookup. Then, at the character defined by recommendationsStartCharacterNum, it does another ES lookup, takes top term, and offloads to Neo4j rec algo. If the Neo4j recs for the top term are not cached, it calls to generate them, but on that request it will return just ES auto-complete data, and then soon after on subsequent requests it will return real recommended results.
+    """
+    term: String
+  ): [SuggestedTerm!]!
+  """Gets the site configuration."""
+  siteConfig: SiteConfig!
+  """
+  Returns Spark recommendations. Will return null if invalid algo or algo params.
+  """
+  sparkRecommendations(
+    algorithm: String!
+    assetType: String!
+    """Any limit higher than 100 will be maxed at 100."""
+    limit: Int!
+  ): [SparkRecommendation!]
+  """Fetches assets from Adobe Stock for a given search term."""
+  stockSearch(
+    """Max limit value is 40"""
+    limit: Int = 40
+    term: String!
+  ): [SearchStockAsset!]
+  storySegments(
+    """A list of story segment ids"""
+    storySegmentIds: [Int]
+  ): [StorySegment]
+  """Searches and returns tags for a given search query and tag category"""
+  tagSearch(category: TagSearchCategory, query: TagSearchQuery): [Tag]
+  """
+  Fetches/generates recommended tags for a given tag term. If the recommendation results for the given term have not yet been processed/cached, they will be generated asynchronously when you make the request and usually available within a few seconds in a subsequent request.
+  """
+  tagSuggestions(
+    """Max limit value is 100"""
+    limit: Int = 10
+    term: String!
+  ): [SuggestedTerm]!
+  upcomingVideos(contentLanguage: ContentLanguage): [Video!]!
+  user(adobeId: String, id: Int, username: String): User
+  userLivestream(streamId: String!): UserLivestream
+  userTypeahead(
+    """Specify the processing logic used for the typeahead results."""
+    method: TypeaheadType = NGRAM
+    """
+    Optional project ID to limit results for MENTIONS method. If specified, the project owner will be included as the first result.
+    """
+    projectId: Int
+    query: UserTypeaheadQuery
+  ): [User!]!
+  users(
+    """
+    This will accept up to 50 Adobe ids. Any id past 50 will be disregarded.
+    """
+    adobeIds: [String]
+    """
+    This will accept up to 50 Behance user ids. Any id past 50 will be disregarded.
+    """
+    userIds: [Int]
+  ): [User]
+  videoCarousel(contentLanguage: ContentLanguage): [Video!]!
+  videos(
+    after: String
+    filter: VideoSearchFilter
+    """
+    Max videos for one page is 24. If "first" is set to more than that, it will only fetch 24 videos
+    """
+    first: Int = 24
+    query: VideoSearchQuery
+  ): VideoConnection
+  viewer: Viewer
+  """
+  Fetches web push notification for the specific entity (project, user livestream).
+  """
+  webPushNotification(
+    """Project ID or stream ID"""
+    entityId: String!
+    notificationType: NotificationType!
+  ): WebPushNotification
+  whatsNewVideos(after: String): VideoConnection
+}
+
+type ReactionStat {
+  count: Int!
+  type: String
+}
+
+type ReferenceLink {
+  title: String!
+  url: String!
+}
+
+type RemoveSavedJobResponse {
+  isRemoved: Boolean!
+}
+
+type ReorderProfileProjectsResponse {
+  errorMessage: String
+  isSuccess: Boolean!
+}
+
+type ReportUserError {
+  errorMessage: String
+}
+
+type Ribbon {
+  image: String!
+  image2x: String!
+  image3x: String
+}
+
+type SaveForYouFeedContentSeen {
+  savedEntities: [ForYouFeedSavedSeenEntity!]
+  """
+  (Deprecated) Shows the list of project ids which have been marked as seen on ForYou feed
+  """
+  savedProjectIds: [Int!]
+}
+
+type SaveJobError {
+  errorMessage: String
+}
+
+type SavedJobItemConnection {
+  edges: [JobItemEdge]!
+  metaContent: JobItemMetaContent!
+  nodes: [JobItem]!
+  pageInfo: PageInfo!
+}
+
+type SchoolCard {
+  cta: SchoolCardCTA!
+  description: String!
+  slug: String!
+}
+
+type SchoolCardCTA {
+  text: String!
+  url: String!
+}
+
+type SearchFilters {
+  """Allowed file extension types for assets"""
+  allowedAssetExtensions: [String!]
+  camera: SearchFiltersCamera!
+  creativeFields: SearchFiltersCreativeFields
+  exposure: SearchFiltersExposure
+  focalLength: SearchFiltersFocalLength
+  lens: SearchFiltersLens
+}
+
+type SearchFiltersCamera {
+  popularBrands: [String!]!
+  trendingCameras: [String!]!
+}
+
+type SearchFiltersCreativeFieldValue {
+  id: String
+  label: String
+  value: String
+}
+
+type SearchFiltersCreativeFields {
+  alphabetized: [SearchFiltersCreativeFieldsAlphabetized!]!
+  popular: [SearchFiltersCreativeFieldValue!]!
+}
+
+type SearchFiltersCreativeFieldsAlphabetized {
+  entries: [SearchFiltersCreativeFieldValue!]!
+  name: String
+}
+
+type SearchFiltersExposure {
+  aperturePopular: [String!]!
+  apertureRanges: [SearchFiltersRangeValue!]!
+  apertureRecommended: [String!]!
+  shutterSpeedPopular: [String!]!
+  shutterSpeedRanges: [SearchFiltersRangeValue!]!
+  shutterSpeedRecommended: [String!]!
+}
+
+type SearchFiltersFocalLength {
+  popular: [String!]!
+  ranges: [SearchFiltersRangeValue]!
+}
+
+type SearchFiltersLens {
+  lensTypes: [SearchFiltersRangeValue!]!
+  popularBrands: [String!]!
+  trendingLenses: [String!]!
+}
+
+type SearchFiltersRangeValue {
+  label: String
+  value: String
+}
+
+type SearchItemEdge {
+  cursor: String!
+  node: SearchResultItem!
+}
+
+type SearchMetaContent {
+  csam: CSAM
+  followableTag: FollowableTag
+  schoolCard: SchoolCard
+  toolCard: ToolCard
+  totalEntityCount: Int
+}
+
+type SearchResultItemConnection {
+  edges: [SearchItemEdge]!
+  metaContent: SearchMetaContent!
+  nodes: [SearchResultItem]!
+  pageInfo: PageInfo!
+}
+
+type SearchShortcut {
+  description: String!
+  entity: SearchShortcutEntity
+  title: String!
+}
+
+type SearchStockAsset {
+  creatorName: String!
+  detailsUrl: String!
+  source: String!
+  thumbnail240Height: Float!
+  """all thumbnail_240s have a height of 240px (mosaic workflow)"""
+  thumbnail240Url: String!
+  thumbnail240Width: Float!
+  thumbnail500Height: Float!
+  """all thumbnail_500s are 500px along the longest edge"""
+  thumbnail500Url: String!
+  thumbnail500Width: Float!
+  title: String
+}
+
+type SendAnalyticsResponse {
+  isSuccess: Boolean!
+}
+
+type SiteConfig {
+  """Keeps the information of the supported file extensions and MIME types."""
+  fileExtensionToMimeTypeMap: FileExtensionToMimeTypeMap!
+  """Project editor configuration"""
+  projectEditorConfig: ProjectEditorConfig!
+  """Clould uploader configuration"""
+  uploader: UploaderConfig!
+  """Viewer configuration"""
+  viewerConfig: ViewerConfig!
+}
+
+type SizeLimits {
+  """Audio size limit"""
+  audio: Int!
+  """Audio size limit"""
+  image: Int!
+  """Audio size limit"""
+  video: Int!
+}
+
+type SocialLink {
+  serviceName: String!
+  socialId: Int!
+  url: String!
+  value: String!
+}
+
+type SourceFile {
+  assetId: String!
+  category: String!
+  currency: String
+  extension: String!
+  hasUserPurchased: Boolean
+  hidden: Int!
+  licenseType: String!
+  mimeType: String!
+  moduleIds: [Int]!
+  projectId: Int!
+  renditionUrl: String!
+  size: String!
+  sourceFileId: Int!
+  stripePriceId: String
+  stripeProductId: String
+  tier: SourceFilePriceTier!
+  title: String!
+  unitAmount: Float
+  userId: Int!
+}
+
+type SourceFileDirectUploadUrl {
+  """Upload Url for source file"""
+  uploadUrl: String!
+}
+
+type SourceFileDownloadUrl {
+  """Temporary download Url for source file"""
+  downloadUrl: String!
+}
+
+type SourceFilePurchase {
+  buyer: User
+  currency: String
+  id: Int!
+  modifiedOn: Int!
+  paymentIntent: PaymentIntent
+  project: Project
+  seller: User
+  sourceFile: SourceFile
+  status: SourceFilePaymentStatus!
+  unitAmount: Float
+}
+
+type SourceFileSellerStats {
+  """Total number of source files available for purchase"""
+  paidSourceFileCount: Int
+  """Total number of source file purchases"""
+  purchaseCount: Int
+  """Total income earned from source files sold"""
+  totalIncome: Float
+}
+
+type SparkRecommendation {
+  assetId: String!
+  assetType: String!
+  score: Float!
+}
+
+type StatsByDay {
+  count: Int!
+  timestamp: Int!
+}
+
+type StockAsset {
+  createdOn: String!
+  creatorName: String!
+  detailsUrl: String!
+  id: String!
+  images: StockAssetImages!
+  title: String!
+}
+
+type StockAssetImages {
+  size_1000: ImageRendition
+  size_240: ImageRendition
+  size_500: ImageRendition
+}
+
+type StockAssetProfileVisibility {
+  stockAssetId: String!
+  visibility: Boolean!
+}
+
+type StockContributorStatus {
+  """Returns the Adobe Stock contributor ID or null if not found"""
+  contributorId: String
+  hasStockAccount: Boolean!
+  hasStockAssets: Boolean!
+  """Assets that have been hidden on Behance."""
+  hiddenAssets: [StockAsset]!
+  """
+  Total count of assets available from Stock. Does not include hidden assets.
+  """
+  stockAssetCount: Int!
+}
+
+type StoryFirstPostAction {
+  actor: User
+  segment: StorySegment
+}
+
+type StorySegment {
+  annotationLinks: [AnnotationLink!]!
+  annotations: StorySegmentAnnotation!
+  durationMs: Int
+  hasMatureContent: Boolean!
+  id: Int!
+  media: StorySegmentMedia!
+  originalDimensions: StorySegmentDimensions!
+  postedOn: String!
+  poster: StorySegmentPoster!
+  project: Project
+  reactionSummary: [ReactionStat!]!
+  shortUrl: String!
+  storyId: Int!
+  type: String!
+  url: String!
+  user: User!
+  viewCount: Int!
+}
+
+type StorySegmentAnnotation {
+  size_120: ImageRendition
+  size_1242: ImageRendition
+  size_1440: ImageRendition
+  size_180: ImageRendition
+  size_28: ImageRendition
+  size_420: ImageRendition
+  size_60: ImageRendition
+  size_720: ImageRendition
+  size_750: ImageRendition
+  size_840: ImageRendition
+}
+
+type StorySegmentDimensions {
+  height: Int!
+  width: Int!
+}
+
+type StorySegmentMedia {
+  size_1024: ImageRendition
+  size_120: ImageRendition
+  size_1242: ImageRendition
+  size_1280: ImageRendition
+  size_1440: ImageRendition
+  size_180: ImageRendition
+  size_28: ImageRendition
+  size_420: ImageRendition
+  size_60: ImageRendition
+  size_640: ImageRendition
+  size_720: ImageRendition
+  size_750: ImageRendition
+  size_840: ImageRendition
+}
+
+type StorySegmentMentionAction {
+  actor: User
+  annotation: AnnotationLink
+  mentionedUser: User
+  segment: StorySegment
+}
+
+type StorySegmentPoster {
+  size_120: ImageRendition
+  size_1242: ImageRendition
+  size_1440: ImageRendition
+  size_180: ImageRendition
+  size_28: ImageRendition
+  size_420: ImageRendition
+  size_60: ImageRendition
+  size_720: ImageRendition
+  size_750: ImageRendition
+  size_840: ImageRendition
+}
+
+type StorySegmentReactionAction {
+  actor: User
+  reaction: ReactionStat
+  segment: StorySegment
+}
+
+type StoryUserReengagedAction {
+  actor: User
+  segment: StorySegment
+}
+
+type StripeAccount {
+  """Whether this account can be subscribed to"""
+  canBeSubscribedTo: Boolean
+  """Whether this account can setup Stripe Connect"""
+  canSetupStripe: Boolean
+  """Whether this account can create subscriptions or not"""
+  canSetupSubscription: Boolean
+  """
+  Uses Stripe API to generate a session link to customer portal of the specific creator
+  """
+  customerPortalUrl: String
+  """Checks whether the country of the connected account is approved"""
+  hasApprovedCountry: Boolean
+  """Stripe Account id on record for the current user"""
+  id: String
+  """
+  Queries Stripe for the details of the authenticated users payment method
+  """
+  paymentMethod: StripePaymentMethod
+  """Queries Stripe for the status of the account."""
+  status: StripeAccountStatus
+  """Uses Stripe API to generate a new link"""
+  url(returnUrl: String): String
+}
+
+type StripePaymentMethod {
+  """The brand of this payment method"""
+  brand: String!
+  """The expiration month of this payment method"""
+  expMonth: String!
+  """The expiration year of this payment method"""
+  expYear: String!
+  """The stripe payment id of this payment method"""
+  id: String!
+  """The last four digits of this payment method"""
+  lastFour: String!
+}
+
+type Subcategory {
+  appUrl: String
+  challengeUrl: String
+  description: String
+  followStatus: Boolean!
+  id: Int!
+  label: String!
+  projects(after: String, first: Int = 48): GalleryProjectsConnection
+  slug: String!
+  uniqueSlug: String!
+}
+
+type SubscribersConnection {
+  edges: [SubscribersEdge!]!
+  nodes: [User!]!
+  pageInfo: PageInfo!
+}
+
+type SubscribersEdge {
+  cursor: String!
+  node: User!
+}
+
+type Subscription {
+  cancelAtPeriodEnd: Boolean!
+  creator: User
+  endsOn: Int!
+  payment: PaymentIntent
+  startedOn: Int!
+  status: SubscriptionStatus!
+  subscriber: User
+  subscriptionId: String!
+}
+
+type SubscriptionChecklistCriteria {
+  hasPremiumContent: Boolean!
+  hasSourceFiles: Boolean!
+  hasSubscriptionOverview: Boolean!
+}
+
+type SubscriptionProduct {
+  """Currency used for the subscription"""
+  currency: String!
+  """Number of active subscribers for the subscription"""
+  numSubscribers: Int
+  """Stripe Price id on record for the current creator"""
+  priceId: String
+  """Stripe Product id on record for the current creator"""
+  productId: String
+  """Net earnings in USD from subscribers in the past 30 days"""
+  recentEarnings: String
+  """
+  Monetary value of the subscription product expressed in units (cents) unit_amount of 100 = 1$
+  """
+  unitAmount: Float!
+}
+
+type SubscriptionsPremiumContentFeedConnection {
+  edges: [SubscriptionsPremiumContentFeedEdge!]!
+  nodes: [PremiumContentFeedItem!]!
+  pageInfo: PageInfo!
+}
+
+type SubscriptionsPremiumContentFeedEdge {
+  cursor: String!
+  node: PremiumContentFeedItem!
+}
+
+type SuggestedTerm {
+  concatenatedTagId: Int
+  concatenatedText: String
+  count: Int
+  isFollowingConcatenatedTag: Boolean
+  text: String!
+}
+
+type Tag {
+  category: Int!
+  id: Int!
+  title: String!
+}
+
+type TagSynonym {
+  authenticated: Int
+  downloadUrl: String
+  galleryUrl: String
+  iconUrl: String
+  iconUrl2x: String
+  name: String
+  synonymId: Int
+  tagId: Int
+  title: String
+  type: Int
+  url: String
+}
+
+type Team {
+  about: String!
+  city: String!
+  country: String!
+  createdOn: Int!
+  displayName: String!
+  featuredOn: Int!
+  features: [TeamFeature]!
+  fields: [Int]!
+  hasDefaultImage: Boolean!
+  hasSocialLinks: Boolean!
+  id: Int!
+  images: TeamImageSizes!
+  inviteOnly: Boolean!
+  isAdmin: Boolean!
+  isFlagged: Boolean!
+  isFollowing: Boolean!
+  isMember: Boolean!
+  isVerified: Boolean!
+  latitude: Float!
+  links: [ReferenceLink]!
+  location: String!
+  locationLink: String!
+  longitude: Float!
+  name: String!
+  slug: String!
+  socialLinks: [SocialLink]!
+  state: String!
+  stats: TeamStats!
+  url: String!
+  website: String!
+}
+
+type TeamFeature {
+  numOfProjects: Int!
+  projects: [FeatureProject]!
+  site: ProjectFeature!
+}
+
+type TeamImageSizes {
+  size_100: ImageRendition
+  size_115: ImageRendition
+  size_138: ImageRendition
+  size_230: ImageRendition
+  size_276: ImageRendition
+  size_50: ImageRendition
+}
+
+type TeamItem {
+  displayName: String!
+  id: Int!
+  imageSizes: TeamImageSizes!
+  locationDisplay: String!
+  slug: String!
+  url: String!
+}
+
+type TeamStats {
+  appreciations: Int!
+  followers: Int!
+  jobs: Int!
+  members: Int!
+  projects: Int!
+  views: Int!
+  wips: Int!
+}
+
+type TextModule {
+  alignment: String!
+  captionAlignment: String!
+  fullBleed: Int
+  """Module id"""
+  id: Int!
+  project: Project!
+  """Project id the module belongs to"""
+  projectId: Int!
+  text: String
+  textPlain: String
+}
+
+type ThreeD {
+  assetType: String
+  iframeUrl: String
+}
+
+type ThreeDAssetTypes {
+  """Translation for threeD asset atlas type"""
+  substanceAtlas: String!
+  """Translation for threeD asset decal type"""
+  substanceDecal: String!
+  """Translation for threeD asset material type"""
+  substanceMaterial: String!
+  """Translation for threeD asset model type"""
+  substanceModel: String!
+}
+
+type ThreeDFileExtensionToAssetTypeMap {
+  """Asset types associated with fbx threeD file type"""
+  fbx: [String!]
+  """Asset types associated with glb threeD file type"""
+  glb: [String!]
+  """Asset types associated with sbsar threeD file type"""
+  sbsar: [String!]
+}
+
+type Tool {
+  approved: Int
+  backgroundColor: String
+  backgroundImage: ProjectCoverImageSizes
+  category: String
+  categoryId: Int
+  categoryLabel: String
+  id: Int
+  synonym: TagSynonym
+  title: String
+  url: String
+}
+
+type ToolCard {
+  cta: ToolCardCTA!
+  description: String!
+  links: [ToolCardLink!]
+  slug: String!
+  title: String!
+}
+
+type ToolCardCTA {
+  text: String!
+  url: String!
+}
+
+type ToolCardLink {
+  text: String!
+  type: String!
+  url: String!
+}
+
+type UpdateJobInvalidInputError {
+  applicationUrlError: String
+  companyImageError: String
+  companyNameError: String
+  companyTypeError: String
+  companyUrlError: String
+  creativeFieldIdsError: String
+  descriptionError: String
+  """A general error not related to input fields."""
+  errorMessage: String
+  jobTypeError: String
+  locationCityError: String
+  locationCountryError: String
+  locationStateError: String
+  shortDescriptionError: String
+  tagsError: String
+  titleError: String
+}
+
+type UpdateProjectInvalidInputError {
+  descriptionError: String
+  """A general error not related to input fields."""
+  errorMessage: String
+  """A list of errors happened in the specific modules."""
+  modulesErrors: [ProjectModuleInvalidInputError!]!
+  """A list of errors happened in the specific tags."""
+  tagsErrors: [ProjectTagInvalidInputError!]!
+  titleError: String
+}
+
+type UploadedSourceFileDetails {
+  """Storage AssetID"""
+  assetId: String!
+  """Monitor href"""
+  monitorHref: String!
+  """Rendition"""
+  rendition: String!
+}
+
+type UploaderConfig {
+  requestAccessKey: String!
+  requestEndpoint: String!
+  signatureEndpoint: String!
+  unixTimestamp: String!
+}
+
+type User {
+  activeSubscriptions: [Subscription]!
+  admin: UserAdminFields
+  adobeId: String!
+  adobePro: [Tool]
+  allowsContactFromAnyone: Boolean!
+  appreciatedProjects(
+    after: String
+    """Max items for one page is48"""
+    first: Int = 24
+  ): AppreciatedProjectsConnection!
+  assets(
+    after: String
+    """List of file types to include in the results."""
+    fileTypes: [UserAssetType!]
+    """
+    Max items for one page is 48. If "first" is set to more than that, it will only fetch 48 items
+    """
+    first: Int = 24
+  ): UserAssetsConnection
+  availabilityInfo: UserAvailabilityInfo
+  availableNetworks: [UserNetworks]!
+  bannerImageUrl: String!
+  blockList: [User]
+  cachedSubscriptionPrice: CachedSubscriptionPrice
+  canInteractWith: Boolean
+  canReceiveFreelanceProposal: Boolean!
+  city: String!
+  company: String!
+  connectedNFTWallets: [NFTWallet!]!
+  country: String!
+  createdOn: Int!
+  creativeFields: [CreativeField]!
+  customSections: [UserCustomSection]!
+  displayName: String!
+  email: String
+  features: [TeamFeature]!
+  firstName: String!
+  flags: UserFlags
+  followers(
+    after: String
+    """
+    Max items for one page is 5000. If "first" is set to more than that, it will only fetch 5000 items
+    """
+    first: Int = 20
+  ): UserFollowerConnection!
+  following(
+    after: String
+    """
+    Max items for one page is 5000. If "first" is set to more than that, it will only fetch 5000 items
+    """
+    first: Int = 20
+  ): UserFollowingConnection!
+  freelanceProjectUserInfo: FreelanceProjectUserInfo
+  freelanceServices(after: String, first: Int = 24): UserFreelanceServicesConnection!
+  hasAtLeastOneSyncedNFT: Boolean!
+  hasConnectedNFTWallet: Boolean!
+  hasDefaultImage: Boolean!
+  hasPortfolio: Boolean!
+  hasPremiumAccess: Boolean!
+  hasStartedImportingNFTWallet: Boolean!
+  hasSyncedNFTWallet: Boolean!
+  hasWebPushSubscription: Boolean!
+  id: Int!
+  images: UserImageSizes!
+  inactiveSubscriptions: [Subscription]!
+  inboxThreadWithMe: InboxThread
+  isAdmin: Boolean!
+  isBlocked: Boolean!
+  isFollowedBy: Boolean!
+  isFollowing: Boolean!
+  isMessageButtonVisible: Boolean!
+  isOptedOutOfRecommendations: Boolean!
+  isProfileOwner: Boolean!
+  isStockContributor: StockContributorStatus!
+  isSubscribable: Boolean!
+  lastName: String!
+  """Fetches user streams. 24 videos per page."""
+  livestreams(
+    after: String
+    """A list of queryable video statuses."""
+    state: [LivestreamQueryableStatus] = [LIVE, REPLAYS]
+  ): UserLivestreamConnection!
+  location: String!
+  locationUrl: String!
+  moodboards(after: String, contains: MoodboardContains, first: Int): UserMoodboardConnection!
+  """Returns all the errors associated with a user importing their nfts"""
+  nftErrors: [String]
+  """Returns all the nft assets associated with a user"""
+  nfts(after: String, first: Int!, types: [NFTModuleTypes]): UserNFTItemConnection!
+  numFollowers: Int!
+  occupation: String!
+  """Project pinned to subscription overview"""
+  pinnedSubscriptionProject: Project
+  premiumContentFeed(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 50
+    """Filter items with premium assets only"""
+    withPremiumAssetsOnly: Boolean = false
+  ): PremiumContentFeedConnection
+  profileProjects(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): ProfileProjectsConnection!
+  profileProjectsWithSourceFiles(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): ProfileProjectsWithSourceFilesConnection!
+  profileTabs: [ProfileTab]!
+  projects(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): UserProjectsConnection!
+  publicFlags: PublicFlags
+  relationshipsByLrAssetRecency(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 20
+    type: RelationshipsByLrAssetRecencyType!
+  ): UserRelationshipsByLrAssetRecencyConnection!
+  socialReferences: [UserSocialReference]!
+  state: String!
+  stats: UserStats!
+  """
+  Stripe Account associated for the current user. Only visible for Profile Owner.
+  """
+  stripeAccount: StripeAccount
+  subscription: Subscription
+  """Subscription information for creators."""
+  subscriptionProduct: SubscriptionProduct
+  """Teams the user is a member of."""
+  teams: [Team]
+  unifiedActivityFeed(
+    after: String
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+  ): UserUnifiedActivityFeedConnection
+  url: String!
+  username: String!
+  webLinks: [UserWebLink]!
+  webPush: WebPush
+  website: String!
+  workExperiences: [UserWorkExperience]!
+  workInProgress: [StorySegment]
+}
+
+type UserAdminFields {
+  isFlagged: Boolean!
+  isVerified: Boolean!
+}
+
+type UserAssetsConnection {
+  edges: [UserAssetsEdge]
+  nodes: [UserAssetItem]
+  pageInfo: PageInfo
+}
+
+type UserAssetsEdge {
+  cursor: String!
+  node: UserAssetItem!
+}
+
+type UserAvailabilityInfo {
+  allowedCurrencies: [AvailabilityCurrencyType!]!
+  availabilityTimeline: AvailabilityTimelineOption
+  buttonCTAType: AvailabilityButtonCTAType!
+  compensationMin: Float
+  currency: AvailabilityCurrencyType!
+  isAvailableFreelance: Boolean!
+  isAvailableFullTime: Boolean!
+  isLookingForRemote: Boolean!
+  isOpenToRelocation: Boolean!
+  userId: Int!
+}
+
+type UserCustomSection {
+  title: String!
+  value: String!
+}
+
+type UserFlag {
+  flag: String!
+}
+
+type UserFlags {
+  hasClosedInboxPaymentPrompt: Boolean!
+  hasClosedInboxPhotoUploadPrompt: Boolean!
+  hasCompletedAllOnboardingTasks: Boolean!
+  hasDisabledServicesRow: Boolean!
+  hasDismissedPersonalizedContentFeed: Boolean!
+  hasDismissedUnreadInboundInquiryModal: Boolean!
+  hasEnabledStockProfileTab: Boolean!
+  hasMoodboard: Boolean!
+  hasSeenProfileTabInnerCircleTooltip: Boolean
+  hasSharedOwnWork: Boolean!
+  isHireMeOnboardingSet: Boolean
+  isUserFollowingCreativeField: Boolean!
+  lastDismissedAnnouncement: Int
+  performedSearch: Boolean!
+  sellYourAssetsPulsePointPresented: Boolean!
+  shouldHideForYouChecklist: Boolean
+  shouldHideProfileSubscriptionChecklist: Boolean
+  showApplicationFeeWarning: Boolean!
+}
+
+type UserFollowerConnection {
+  edges: [UserFollowerEdge]!
+  nodes: [UserFollowerItem]!
+  pageInfo: PageInfo!
+}
+
+type UserFollowerEdge {
+  cursor: String!
+  node: UserFollowerItem!
+}
+
+type UserFollowerItem {
+  user: User!
+}
+
+type UserFollowingConnection {
+  edges: [UserFollowingEdge]!
+  nodes: [UserFollowingItem]!
+  pageInfo: PageInfo!
+}
+
+type UserFollowingEdge {
+  cursor: String!
+  node: UserFollowingItem!
+}
+
+type UserFollowingItem {
+  user: User!
+}
+
+type UserFreelanceServicesConnection {
+  edges: [UserFreelanceServicesEdge]!
+  nodes: [FreelanceService]!
+  pageInfo: PageInfo!
+}
+
+type UserFreelanceServicesEdge {
+  cursor: String!
+  node: FreelanceService!
+}
+
+type UserImageSizes {
+  size_100: ImageRendition
+  size_115: ImageRendition
+  size_138: ImageRendition
+  size_230: ImageRendition
+  size_276: ImageRendition
+  size_50: ImageRendition
+}
+
+type UserLightroomActivityFeedConnection {
+  edges: [UserLightroomActivityFeedEdge]!
+  isFallbackResult: Boolean!
+  nodes: [LightroomActivityFeedItem]!
+  pageInfo: PageInfo!
+}
+
+type UserLightroomActivityFeedEdge {
+  cursor: String!
+  node: LightroomActivityFeedItem!
+}
+
+type UserLivestream {
+  adminFlags: LivestreamAdminFlag
+  animatedThumbnailUrl: String!
+  chat: Chat
+  createdOn: String!
+  creativeFields: [CreativeField]
+  description: String!
+  durationSeconds: Int
+  encodedTitle: String!
+  hasTranscript: Boolean!
+  id: Int!
+  iframeUrl: String!
+  isAppreciated: Boolean!
+  isFeatured: Boolean!
+  isLive: Boolean!
+  isNotified: Boolean!
+  isPremium: Boolean!
+  lfToken: String
+  linkedAssets: [LinkedAsset!]!
+  linkedAssetsCount: Int!
+  privacy: Int!
+  """StreamOrchestrator State"""
+  state: LivestreamState
+  status: Int!
+  streamId: String!
+  streamer: User!
+  streamingVendor: String!
+  tags: [Tag]
+  thumbnailUrl: String!
+  title: String!
+  tools: [Tool]
+  userGuid: String!
+  userId: Int!
+  videoId: String!
+  videoPageUrl: String!
+  videoType: String!
+  views: Int!
+}
+
+type UserLivestreamConnection {
+  edges: [UserLivestreamEdge]!
+  nodes: [UserLivestream]!
+  pageInfo: PageInfo!
+}
+
+type UserLivestreamEdge {
+  cursor: String!
+  node: UserLivestream!
+}
+
+type UserMentionProjectCommentAction {
+  actor: User
+  comment: ProjectComment
+  project: Project
+}
+
+type UserMoodboardConnection {
+  edges: [UserMoodboardEdge]!
+  nodes: [Moodboard]!
+  pageInfo: PageInfo!
+}
+
+type UserMoodboardEdge {
+  cursor: String!
+  node: Moodboard!
+}
+
+type UserNFTItemConnection {
+  nodes: [NFTItem]
+  pageInfo: PageInfo!
+}
+
+type UserNetworkFeedConnection {
+  edges: [UserNetworkFeedEdge!]!
+  nodes: [NetworkFeedItem!]!
+  pageInfo: PageInfo!
+}
+
+type UserNetworkFeedEdge {
+  cursor: String!
+  node: NetworkFeedItem!
+}
+
+type UserNetworks {
+  icon: String!
+  id: Int!
+  key: String!
+  name: String!
+  visible: Int!
+}
+
+type UserProjectsConnection {
+  edges: [UserProjectsEdge]!
+  nodes: [Project]!
+  pageInfo: PageInfo!
+}
+
+type UserProjectsEdge {
+  cursor: String!
+  node: Project!
+}
+
+type UserPsxActivityFeedConnection {
+  edges: [UserPsxActivityFeedEdge]!
+  nodes: [PsxActivityFeedItem]!
+  pageInfo: PageInfo!
+}
+
+type UserPsxActivityFeedEdge {
+  cursor: String!
+  node: PsxActivityFeedItem!
+}
+
+type UserPushNotificationsSettings {
+  isEnabled: Boolean!
+  notifications: [CreativeNotification!]!
+}
+
+type UserRelationshipsByLrAssetRecencyConnection {
+  edges: [UserRelationshipsByLrAssetRecencyEdge]!
+  nodes: [UserRelationshipsByLrAssetRecencyItem]!
+  pageInfo: PageInfo!
+}
+
+type UserRelationshipsByLrAssetRecencyEdge {
+  cursor: String!
+  node: UserRelationshipsByLrAssetRecencyItem!
+}
+
+type UserRelationshipsByLrAssetRecencyItem {
+  user: User!
+}
+
+type UserSocialReference {
+  id: Int!
+  socialId: Int!
+  socialService: String!
+  socialUsername: String!
+  url: String!
+  userId: Int!
+}
+
+type UserSourceFilePurchasesConnection {
+  edges: [UserSourceFilePurchasesEdge]!
+  nodes: [SourceFilePurchase]!
+  pageInfo: PageInfo!
+}
+
+type UserSourceFilePurchasesEdge {
+  cursor: String!
+  node: SourceFilePurchase!
+}
+
+type UserStat {
+  lrDiscoverAssetCount: Int!
+  lrTutorialAssetCount: Int!
+  user: User
+}
+
+type UserStats {
+  allTime: UserStatsAllTime!
+  appreciations: Int!
+  comments: Int!
+  followers: Int!
+  following: Int!
+  """Overall project stats for the past month"""
+  monthly: MonthlyStats
+  """Recent stats for the user's projects """
+  projects(after: String, first: Int = 10): ProjectStatsConnection
+  views: Int!
+}
+
+type UserStatsAllTime {
+  givenProjectAppreciations: Int!
+  givenProjectComments: Int!
+  givenProjectViews: Int!
+  receivedProfileViews: Int!
+  receivedProjectAppreciations: Int!
+  receivedProjectComments: Int!
+  receivedProjectViews: Int!
+}
+
+type UserUnifiedActivityFeedConnection {
+  edges: [UserUnifiedActivityFeedEdge]!
+  nodes: [UnifiedActivityFeedItem]!
+  pageInfo: PageInfo!
+}
+
+type UserUnifiedActivityFeedEdge {
+  cursor: String!
+  node: UnifiedActivityFeedItem!
+}
+
+type UserWebLink {
+  id: Int!
+  order: Int!
+  title: String!
+  url: String!
+}
+
+type UserWorkExperience {
+  endDate: Int!
+  location: String!
+  organization: String!
+  position: String!
+  startDate: Int!
+  weight: Int!
+}
+
+type VideoConnection {
+  edges: [VideoEdge]!
+  nodes: [Video]!
+  pageInfo: PageInfo!
+}
+
+type VideoEdge {
+  cursor: String!
+  node: Video!
+}
+
+type VideoModule {
+  alignment: String!
+  caption: String!
+  captionAlignment: String!
+  captionPlain: String!
+  embed: String
+  fullBleed: Int
+  height: Int!
+  id: Int!
+  isDoneProcessing: Boolean!
+  nftData: NFT
+  project: Project!
+  src: String
+  thumbnailHeight: Int
+  thumbnailUrl: String
+  thumbnailWidth: Int
+  videoData: CcvVideoData
+  width: Int!
+}
+
+type Viewer {
+  activeSubscribers(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 50
+  ): SubscribersConnection
+  activeSubscriptions: [Subscription]!
+  admin: UserAdminFields
+  adminPermissions: AdminPermissions
+  adobeId: String!
+  adobePro: [Tool]
+  allExpressFavorites: [ExpressAsset!]!
+  allowsContactFromAnyone: Boolean!
+  """Jobs applied to by authorized user."""
+  appliedJobs(
+    after: String
+    filter: AppliedJobsSearchFilter
+    """
+    Max items for one page is 10. If "first" is set to more than that, it will only fetch 10 items
+    """
+    first: Int = 10
+  ): AppliedJobItemConnection
+  appreciatedProjects(
+    after: String
+    """Max items for one page is48"""
+    first: Int = 24
+  ): AppreciatedProjectsConnection!
+  assets(
+    after: String
+    """List of file types to include in the results."""
+    fileTypes: [UserAssetType!]
+    """
+    Max items for one page is 48. If "first" is set to more than that, it will only fetch 48 items
+    """
+    first: Int = 24
+  ): UserAssetsConnection
+  availabilityInfo: UserAvailabilityInfo
+  availableNetworks: [UserNetworks]!
+  bannerImageUrl: String!
+  blockList: [User]
+  cachedSubscriptionPrice: CachedSubscriptionPrice
+  canAddSourceFiles: Boolean!
+  canAddSubscriptions: Boolean!
+  canInteractWith: Boolean
+  canReceiveFreelanceProposal: Boolean!
+  city: String!
+  company: String!
+  connectedNFTWallets: [NFTWallet!]!
+  country: String!
+  """Jobs created by authorized user."""
+  createdJobs(
+    after: String
+    filter: CreatedJobsSearchFilter
+    """
+    Max items for one page is 10. If "first" is set to more than that, it will only fetch 10 items
+    """
+    first: Int = 10
+  ): CreatedJobItemConnection
+  createdOn: Int!
+  creativeFields: [CreativeField]!
+  customSections: [UserCustomSection]!
+  displayName: String!
+  """Draft projects for an authorized user."""
+  draftProjects: DraftProjects
+  email: String
+  features: [TeamFeature]!
+  firstName: String!
+  flags: UserFlags
+  """Returns a list of tags followed by the logged in user"""
+  followedTags: [Tag]!
+  followers(
+    after: String
+    """
+    Max items for one page is 5000. If "first" is set to more than that, it will only fetch 5000 items
+    """
+    first: Int = 20
+  ): UserFollowerConnection!
+  following(
+    after: String
+    """
+    Max items for one page is 5000. If "first" is set to more than that, it will only fetch 5000 items
+    """
+    first: Int = 20
+  ): UserFollowingConnection!
+  freelanceProjectUserInfo: FreelanceProjectUserInfo
+  freelanceProjects(after: String, first: Int = 20, statuses: [FreelanceProjectStatus]!): FreelanceProjectConnection
+  freelanceServices(after: String, first: Int = 24): UserFreelanceServicesConnection!
+  hasApprovedJobs: Boolean!
+  hasAtLeastOneSyncedNFT: Boolean!
+  hasConnectedNFTWallet: Boolean!
+  hasDefaultImage: Boolean!
+  hasPortfolio: Boolean!
+  hasPremiumAccess: Boolean!
+  hasStartedImportingNFTWallet: Boolean!
+  hasSubscriptions: Boolean!
+  hasSyncedNFTWallet: Boolean!
+  hasWebPushSubscription: Boolean!
+  id: Int!
+  images: UserImageSizes!
+  inactiveSubscriptions: [Subscription]!
+  inboxThread(id: String, recipientIds: [Int]): InboxThread
+  inboxThreadCounts: InboxThreadCounts
+  inboxThreadParent(boxLocation: InboxBoxLocationType = INBOX, id: Int!, type: InboxThreadParentType): InboxThreadParent
+  inboxThreadParents(after: String, filter: InboxThreadParentsFilter, first: Int = 10, type: InboxThreadParentType): InboxThreadParentsConnection!
+  inboxThreadWithMe: InboxThread
+  inboxThreads(after: String, filter: InboxThreadsFilter, first: Int = 20): InboxThreadsConnection
+  """Returns a list of invitations for the logged in user"""
+  invitations: [Invitations]!
+  isAdmin: Boolean!
+  isBlocked: Boolean!
+  isFollowedBy: Boolean!
+  isFollowing: Boolean!
+  isMessageButtonVisible: Boolean!
+  isOptedOutOfRecommendations: Boolean!
+  isProfileOwner: Boolean!
+  """Returns details about the Adobe Stock contributor status of the viewer"""
+  isStockContributor: StockContributorStatus!
+  isSubscribable: Boolean!
+  """Adobe Live subscription status for a user by content language"""
+  isSubscribedToAdobeLive(contentLanguage: ContentLanguage): Boolean!
+  lastName: String!
+  """Fetches user streams. 24 videos per page."""
+  livestreams(
+    after: String
+    """A list of queryable video statuses."""
+    state: [LivestreamQueryableStatus] = [LIVE, REPLAYS]
+  ): UserLivestreamConnection!
+  location: String!
+  locationUrl: String!
+  moodboards(after: String, contains: MoodboardContains, first: Int): UserMoodboardConnection!
+  """Returns all the errors associated with a user importing their nfts"""
+  nftErrors: [String]
+  """Returns all the nft assets associated with a user"""
+  nfts(after: String, first: Int!, types: [NFTModuleTypes]): UserNFTItemConnection!
+  """
+  Unread notification counts for the viewer. When a driver is specified, counts will be filtered by actions defined within that driver.
+  """
+  notificationCounts(driver: NotificationsDriver): NotificationsCount
+  numFollowers: Int!
+  occupation: String!
+  payments: Payments
+  """Project pinned to subscription overview"""
+  pinnedSubscriptionProject: Project
+  premiumContentFeed(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 50
+    """Filter items with premium assets only"""
+    withPremiumAssetsOnly: Boolean = false
+  ): PremiumContentFeedConnection
+  profileChecklist: ProfileChecklist
+  profileProjects(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): ProfileProjectsConnection!
+  """Projects containing source files the user has purchased"""
+  profileProjectsWithPurchasedSourceFiles(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): ProfileProjectsWithPurchasedSourceFilesConnection
+  profileProjectsWithSourceFiles(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): ProfileProjectsWithSourceFilesConnection!
+  profileTabs: [ProfileTab]!
+  projects(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): UserProjectsConnection!
+  publicFlags: PublicFlags
+  pulsePoints: PulsePoints
+  """Returns a list of recommended tags for the logged in user"""
+  recommendedTags(excludeTagIds: [Int], limit: Int = 50): [Tag]!
+  relationshipsByLrAssetRecency(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 20
+    type: RelationshipsByLrAssetRecencyType!
+  ): UserRelationshipsByLrAssetRecencyConnection!
+  """Jobs saved by authorized user."""
+  savedJobs(
+    after: String
+    filter: SavedJobsSearchFilter
+    """
+    Max items for one page is 10. If "first" is set to more than that, it will only fetch 10 items
+    """
+    first: Int = 10
+  ): SavedJobItemConnection
+  socialReferences: [UserSocialReference]!
+  sourceFilePurchases(
+    after: String
+    """Max items for one page is20"""
+    first: Int = 20
+  ): UserSourceFilePurchasesConnection!
+  sourceFilePurchasesTotal: Int
+  sourceFileSellerStats: SourceFileSellerStats
+  state: String!
+  stats: UserStats!
+  """
+  Stripe Account associated for the current user. Only visible for Profile Owner.
+  """
+  stripeAccount: StripeAccount
+  subscription: Subscription
+  subscriptionChecklist: SubscriptionChecklistCriteria
+  """Subscription information for creators."""
+  subscriptionProduct: SubscriptionProduct
+  subscriptionsPremiumContentFeed(
+    after: String
+    """
+    Max items for one page is 50. If "first" is set to more than that, it will only fetch 50 items
+    """
+    first: Int = 50
+    """Filter items with assets only"""
+    withAssetsOnly: Boolean = false
+  ): SubscriptionsPremiumContentFeedConnection
+  """Teams the user is a member of."""
+  teams: [Team]
+  unifiedActivityFeed(
+    after: String
+    """
+    Max items for one page is 100. If "first" is set to more than that, it will only fetch 100 items
+    """
+    first: Int = 20
+  ): UserUnifiedActivityFeedConnection
+  unreadInboxInquiry: InboxThreadMessage
+  url: String!
+  username: String!
+  webLinks: [UserWebLink]!
+  webPush: WebPush
+  website: String!
+  workExperiences: [UserWorkExperience]!
+  workInProgress: [StorySegment]
+}
+
+type ViewerConfig {
+  """User's profile country code"""
+  countryCodeFromIp: String
+  """User's profile country code"""
+  profileCountryCode: String
+}
+
+type WalletConnection {
+  isConnected: Boolean!
+}
+
+type WebPush {
+  settings: UserPushNotificationsSettings
+  subscriptions: [CreativeNotification!]!
+}
+
+type WebPushNotification {
+  body: String!
+  entityUrl: String!
+  owner: User!
+  thumbnailUrl: String!
+  title: String!
+}
+
+type exifData {
+  aperture: exifDataValue
+  exposureMode: exifDataValue
+  flash: exifDataValue
+  focalLength: exifDataValue
+  iso: exifDataValue
+  lens: exifDataValue
+  location: exifDataValue
+  makeAndModel: exifDataValue
+  shutterSpeed: exifDataValue
+  software: exifDataValue
+}
+
+type exifDataValue {
+  id: String
+  label: String
+  searchValue: String
+  value: String
+}
+
+type project_fields {
+  backgroundImage: ProjectCoverImageSizes
+  id: Int
+  label: String
+  slug: String
+  url: String
+}
+
+type project_stats {
+  appreciations: ProjectStatsTimeFrames
+  comments: ProjectStatsTimeFrames
+  views: ProjectStatsTimeFrames
+}
+
+union ActionDataEntities = AdobeLiveAction | AnnouncementAction | AppreciateAction | BaseAction | CreatorSubscriptionStartedAction | FollowCollectionAction | FollowUserAction | FreelanceProjectReviewedAction | JobApplicationCreatedAction | JobApprovedAction | LiveStreamAction | ModuleAddedToCollectionAction | ProjectAddedToCollectionAction | ProjectCommentAction | StoryFirstPostAction | StorySegmentMentionAction | StorySegmentReactionAction | StoryUserReengagedAction | UserMentionProjectCommentAction
+
+union AddInboxFileAttachmentResponse = InboxFileAttachment | InboxInvalidFileAttachment
+
+union ApplicantShortlistResponse = ApplicantShortlistError | JobItem
+
+union ApplyToJobResponse = ApplyToJobError | JobItem
+
+union CloneProjectResponse = CloneProjectError | Project
+
+union CreateFreelanceServiceResponse = CreateFreelanceServiceError | FreelanceService
+
+union CreateJobResponse = CreateJobInvalidInputError | JobItem
+
+union CreateProjectCommentResponse = CreateProjectCommentInvalidInputError | ProjectComment
+
+union EditFreelanceServiceResponse = EditFreelanceServiceError | FreelanceService
+
+union FollowGalleryResponse = FollowGalleryError | Gallery
+
+union FollowSubcategoryResponse = FollowGalleryError | Subcategory
+
+union FollowUserResponse = FollowUserError | User
+
+union ForYouFeedActor = AdobeGallery | CuratedCategory | FeatureQueue | FollowableTag | Moodboard | User
+
+union ForYouFeedItemEntity = Project | StorySegment | UserLivestream
+
+union FreelanceServiceAssetEntity = ImageModule | Project
+
+union InboxMessageAttachment = DeletedMessage | ExpiredStorySegment | FreelancePayment | FreelancePaymentRequestAttachment | FreelanceProject | FreelanceProjectUpdateAttachment | FreelanceServiceRequest | InboxAttachmentPlaceholder | InboxFileAttachment | InboxHireMeData | InboxInvalidFileAttachment | InvalidFreelanceServiceRequest | InvalidJobMessageAttachment | JobItem | MeetingAttachment | StorySegment
+
+union InboxThreadParentEntity = JobItem
+
+union MoodboardItemEntity = ImageModule | MediaCollectionComponent | Project
+
+union MoodboardItemImageSizes = ProjectCoverImageSizes | ProjectModuleImageSizes
+
+union NFTItem = ImageModule | VideoModule
+
+union OnboardingCategory = CuratedCategory | FeatureQueue
+
+union PremiumContentFeedItem = Project | UserLivestream
+
+union ProjectModule = AudioModule | EmbedModule | ImageModule | MediaCollectionModule | TextModule | VideoModule
+
+union ReportUserResponse = ReportUserError | User
+
+union SaveJobResponse = JobItem | SaveJobError
+
+union SearchResultItem = EmbedModule | ImageModule | Moodboard | Project | Team | User
+
+union SearchShortcutEntity = AssetShortcut | HireShortcut
+
+union UnifiedActivityFeedItem = LightroomActivityFeedItem | Project | PsxActivityFeedItem
+
+union UpdateJobResponse = JobItem | UpdateJobInvalidInputError
+
+union UpdateProjectResponse = Project | UpdateProjectInvalidInputError
+
+union UserAssetItem = StockAsset
+
+union Video = AdobeLiveVideo | UserLivestream
+
+input AppliedJobsSearchFilter {
+  jobStatus: JobStatus
+}
+
+input AssetSearchFilter {
+  """
+  The category the assets are filtered to, e.g. "fonts", "illustrations"
+  """
+  category: SourceFilesCategory
+  """
+  File Extension Type of the assets being searched, e.g. "png", "pdf"
+  """
+  extensionTypes: [AssetExtensionType]
+  """Price tier of the assets being searched"""
+  priceTier: SourceFilePriceTier
+  """Specify the way the assets are sorted"""
+  sort: AssetSortType
+}
+
+input AudioModuleInput {
+  alignment: TextAlign
+  caption: Html
+  captionAlignment: TextAlign
+  """
+  Module ID. Negative value is used for a new module - `srcUrl` is required in this case.
+  """
+  id: Int!
+  """Url to the audio in the temporary Amazon S3 bucket."""
+  srcUrl: Url
+}
+
+input CreateFreelanceProjectParams {
+  currency: String! = "USD"
+  """The timestamp of the target delivery date"""
+  deliveryDate: Int!
+  description: String!
+  """The user id of the hiring person"""
+  hirerId: Int!
+  title: String!
+  unitAmount: Float!
+  upfrontPercent: FreelanceProjectUpfrontPercentage!
+}
+
+input CreateFreelanceServiceParams {
+  """Image assets that represent this service, maximum of 50"""
+  assets: [FreelanceServiceAssetInput!]
+  categories: [Int!]
+  concepts: Int
+  deliveryTime: FreelanceServiceDeliveryTime!
+  description: String!
+  revisions: Int
+  title: String!
+  unitAmount: Float!
+}
+
+input CreateInboxFileAttachmentParams {
+  """The name of the file returned from the storage"""
+  fileName: String!
+  """Attached file MIME Type, e.g. image/jpeg"""
+  mimeType: InboxFileAttachmentMIMEInput!
+  """The size of an attached file in bytes"""
+  size: Int!
+  """File attachment title"""
+  title: InboxFileAttachmentTitleInput!
+}
+
+input CreateInboxHireMeDataParams {
+  budget: String
+  company: String
+  currency: String
+  location: String
+  remote: Boolean
+  timeline: String
+  type: InboxHireMeType
+}
+
+input CreateJobParams {
+  """Specify how an applicant applies for a job."""
+  allowedApplyPlace: JobAllowedApplyPlace!
+  """
+  Specify an external url to apply a job with max length of 255. Will be ignored when `allowedApplyPlace` is "BEHANCE".
+  """
+  applicationUrl: JobApplicationUrl
+  """Will be ignored if `companyType` is not "COMPANY"."""
+  company: JobCompanyToSave
+  companyType: JobCompanyType!
+  """The pipe numeric creative fields ids, e.g. "44|123"."""
+  creativeFieldIds: JobCreativeFieldIds!
+  """Specify a full job description."""
+  description: JobDescription!
+  jobType: JobType!
+  location: JobLocationToSave
+  remoteStatus: JobRemoteStatus!
+  """The short description with max length of 90 symbols."""
+  shortDescription: JobShortDescription
+  """
+  The list of tags splitting with a pipe character, e.g. "logo design|icons".
+  """
+  tags: JobTags
+  """The title with max length of 200 symbols."""
+  title: JobTitle!
+}
+
+input CreateSourceFileParams {
+  category: String!
+  currency: String
+  fileName: String!
+  licenseType: String!
+  mimeType: SourceFileMIMEType!
+  moduleIds: [Int]
+  projectId: Int!
+  size: String!
+  tier: SourceFilePriceTier!
+  title: SourceFileTitleType!
+  unitAmount: Float
+}
+
+input CreatedJobsSearchFilter {
+  """`ACTIVE` by default"""
+  jobStatus: JobStatus = ACTIVE
+}
+
+input EmbedModuleInput {
+  alignment: TextAlign
+  caption: Html
+  captionAlignment: TextAlign
+  fullBleed: ProjectModuleFullBleed
+  """Full module html code."""
+  html: HtmlWithIframe
+  """
+  Module ID. Negative value is used for new module - `html`, `originalEmbed`, `originalHeight`, and `originalWidth` are required in this case.
+  """
+  id: Int!
+  """Embed html code."""
+  originalEmbed: HtmlWithIframe
+  originalHeight: Int
+  originalWidth: Int
+  widthUnit: String
+}
+
+input ForYouFeedExcludeEntity {
+  entityId: Int!
+  entityType: ForYouFeedItemEntityType!
+}
+
+input ForYouFeedSeenEntity {
+  entityId: Int!
+  entityType: ForYouFeedItemEntityType!
+}
+
+input FreelanceServiceAssetInput {
+  entityId: Int!
+  entityType: FreelanceServiceAssetType!
+  projectId: Int!
+}
+
+input FreelanceServiceInquiryParams {
+  company: String
+  freelanceServiceId: Int!
+  timeline: FreelanceServiceDeliveryTime
+}
+
+input ImageModuleInput {
+  alignment: TextAlign
+  altText: String
+  caption: Html
+  captionAlignment: TextAlign
+  fullBleed: ProjectModuleFullBleed
+  """
+  Module ID. Negative value is used for a new module - `srcUrl` is required in this case.
+  """
+  id: Int!
+  """List of linked asset urls associated with a new module."""
+  linkedAssetUrls: [Url!]
+  nftData: NFTInput
+  """Url to the image in the temporary Amazon S3 bucket."""
+  srcUrl: Url
+  tags: [String!]
+  threeDData: ThreeDInput
+}
+
+input InboxThreadParentsFilter {
+  """Filter archived thread parents"""
+  isArchived: Boolean
+}
+
+input InboxThreadsFilter {
+  """Filter threads with inquiries"""
+  hasInquiry: Boolean = false
+  """Filter archived threads"""
+  isArchived: Boolean = false
+  """Filter threads from shortlisted users"""
+  isShortlisted: Boolean = false
+  """Filter out threads with parents (E.g. jobs)"""
+  withoutParents: Boolean = false
+}
+
+"""Specify the company data if a job is created for the specific company."""
+input JobCompanyToSave {
+  """
+  Specify the company logo url. The image minimum size is 276x276 pixels.
+  """
+  image: String
+  """Specify the company name with max length of 200 symbols."""
+  name: JobCompanyName!
+  """Specify the company url with max length of 255 symbols."""
+  url: JobCompanyUrl!
+}
+
+input JobLocationToSave {
+  city: JobCity
+  country: JobCountry!
+  state: JobState
+}
+
+input JobSearchFilter {
+  city: city
+  country: country
+  """
+  The creative field the jobs are filtered to, e.g. "graphic design"
+  """
+  creativeField: creativeField
+  """
+  If this flag is set "country", "state", and "city" fields will be ignored.
+  """
+  isWorldwide: Boolean = false
+  jobType: JobType
+  state: state
+}
+
+input LinkedAssetInput {
+  category: SourceFilesCategory
+  licenseType: SourceFileLicenseType!
+  """ModuleIds associated with the linked asset"""
+  moduleIds: [Int]
+  """
+  Specify the asset name with min length of 3 and max length of 255 symbols.
+  """
+  name: LinkedAssetName!
+  premium: PremiumStatus!
+  """Specify the asset url with max length of 1000 symbols."""
+  url: LinkedAssetUrl!
+}
+
+input MediaCollectionComponentInput {
+  """The basename of the component file."""
+  filename: String!
+  """
+  Component ID. Negative value is used for a new component - `srcUrl` is required in this case.
+  """
+  id: Int!
+  """Url to the file in the temporary Amazon S3 bucket."""
+  srcUrl: Url
+}
+
+input MediaCollectionModuleInput {
+  alignment: TextAlign
+  caption: Html
+  captionAlignment: TextAlign
+  collectionType: MediaCollectionType
+  components: [MediaCollectionComponentInput!]
+  fullBleed: ProjectModuleFullBleed
+  """Module ID. Negative value is used for a new module."""
+  id: Int!
+  sortType: MediaCollectionSortType
+}
+
+"""
+Filter by moodboards that have a specific project/module/grid item in them.
+"""
+input MoodboardContains {
+  id: Int!
+  type: MoodboardContainsType!
+}
+
+input MultiPartSegment {
+  entityTag: String!
+  segmentNumber: Int!
+}
+
+input NFTInput {
+  contractAddress: NFTContractAddressInput!
+  tokenId: Int!
+}
+
+input Point2DInput {
+  x: Int!
+  y: Int!
+}
+
+input ProjectCoverInput {
+  """The top left coordinates of the original cover image."""
+  coverTopLeft: Point2DInput!
+  """The coordinates of the bottom right point for cropping."""
+  cropBottomRight: Point2DInput!
+  """The coordinates of the top left point for cropping."""
+  cropTopLeft: Point2DInput!
+  height: Int!
+  scale: Float!
+  """
+  Url to the uploaded image or to the image in the temporary Amazon S3 bucket.
+  """
+  sourceUrl: Url!
+  width: Int!
+}
+
+input ProjectFieldStylesInput {
+  """The color in RRGGBB format, e.g. `a4a4a4`."""
+  color: Color!
+  """A comma delimited string of fonts, e.g. `helvetica,arial,sans-serif`."""
+  fontFamily: FontFamily!
+  fontSize: Int!
+  """Font style, e.g. `normal`."""
+  fontStyle: FontStyle!
+  """Font weight, e.g. `bold`."""
+  fontWeight: FontWeight!
+  lineHeight: Float!
+  """Text alignment, e.g. `left`."""
+  textAlign: TextAlign!
+  """Text decoration, e.g. `none`."""
+  textDecoration: TextDecoration!
+  """Text transform, e.g. `uppercase`."""
+  textTransform: TextTransform!
+}
+
+"""Represents a project module. Must have `only one` non-nullable field."""
+input ProjectModuleInput {
+  audioModule: AudioModuleInput
+  embedModule: EmbedModuleInput
+  imageModule: ImageModuleInput
+  mediaCollectionModule: MediaCollectionModuleInput
+  textModule: TextModuleInput
+  videoModule: VideoModuleInput
+}
+
+input SavedJobsSearchFilter {
+  """If this param is not provided only `ACTIVE` jobs are returned."""
+  jobStatus: JobStatus = ACTIVE
+}
+
+input SearchResultFilter {
+  assets: assetsFilter
+  assetsCategory: assetsCategoryFilter
+  assetsPriceTier: assetsPriceTierFilter
+  ccService: ccService
+  city: city
+  color_hex: color_hex
+  country: country
+  creative_fields: creative_fields
+  exif_aperture: exif_aperture
+  exif_flash: exif_flash
+  exif_focal_length: exif_focal_length
+  exif_iso: exif_iso
+  exif_lens: exif_lens
+  exif_lens_brand: exif_lens_brand
+  exif_make: exif_make
+  exif_make_exact: exif_make_exact
+  exif_shutter_speed: exif_shutter_speed
+  exif_zoom: exif_zoom
+  field: field
+  gif: gif
+  hasSubscription: has_subscription
+  """
+  Pipe-delimited image module id list to override search. Special permissions needed for this filter to work.
+  """
+  imageIds: String
+  nft: nft
+  paymentType: UserPaymentsFilter
+  premium: PremiumFilter
+  schools: schools
+  """id for image module to get similar style images for"""
+  similarStyleImagesId: SimilarStyleImageId
+  sort: sort
+  sourceFileCategory: sourceFileCategory
+  sourceFilePriceTier: sourceFilePriceTier
+  sourceFiles: SourceFilesFilter
+  state: state
+  time: time
+  tools: tools
+  userAvailability: UserAvailabilityFilter
+}
+
+input TextModuleInput {
+  alignment: TextAlign
+  html: String
+  """Module id. Negative value for a new module."""
+  id: Int!
+}
+
+input ThreeDInput {
+  assetId: ThreeDAssetIdInput!
+  assetType: ThreeDAssetType!
+}
+
+input UpdateJobParams {
+  """
+  Specify how an applicant applies for a job. The field is required on updating `applicationUrl`.
+  """
+  allowedApplyPlace: JobAllowedApplyPlace
+  """
+  Specify an external url to apply a job with max length of 255. Will be ignored when `allowedApplyPlace` is "BEHANCE".
+  """
+  applicationUrl: JobApplicationUrl
+  """Will be ignored if `companyType` is not "COMPANY"."""
+  company: JobCompanyToSave
+  """The field is required if `company` is being updated."""
+  companyType: JobCompanyType
+  """The pipe numeric creative fields ids, e.g. "44|123"."""
+  creativeFieldIds: JobCreativeFieldIds
+  """Specify a full job description."""
+  description: JobDescription
+  jobStatus: JobStatus
+  jobType: JobType
+  location: JobLocationToSave
+  remoteStatus: JobRemoteStatus
+  """The short description with max length of 90 symbols."""
+  shortDescription: JobShortDescription
+  """
+  The list of tags splitting with a pipe character, e.g. "logo design|icons".
+  """
+  tags: JobTags
+  """The title with max length of 200 symbols."""
+  title: JobTitle
+}
+
+input UpdateProjectParams {
+  """
+  The list of agency ids splitting with a pipe character, e.g. "185289859|84490865".
+  """
+  agencies: ProjectAgencies
+  """Project assets"""
+  assets: [LinkedAssetInput!]
+  """The color in RRGGBB format, e.g. `a4a4a4`."""
+  backgroundColor: Color
+  """
+  The list of brand ids splitting with a pipe character, e.g. "20627|20234".
+  """
+  brands: ProjectBrands
+  canvasTopMargin: Int
+  """CSS styles for captions"""
+  captionStyles: ProjectFieldStylesInput
+  """If the comments are allowed for a project or not"""
+  commentsStatus: ProjectCommentsStatus
+  conceivedOn: Int
+  """
+  The list of member ids splitting with a pipe character, e.g. "20627|20234".
+  """
+  coowners: ProjectCoowners
+  cover: ProjectCoverInput
+  """
+  The list of creative fields splitting with a pipe character, e.g. "graphic design|illustration".
+  """
+  creativeFields: ProjectCreativeFields
+  """
+  The list of member ids who will be recognized for the project splitting with a pipe character, e.g. "20627|20234".
+  """
+  credits: ProjectCredits
+  """The project description."""
+  description: ProjectDescription
+  license: ProjectLicenseType
+  """CSS styles for links"""
+  linkStyles: ProjectFieldStylesInput
+  """If a project contains mature project (`ON`) or not (`OFF`)"""
+  matureContentStatus: ProjectMatureContentStatus
+  moduleBottomMargin: Int
+  """The list of all project modules. Missing modules will be removed."""
+  modules: [ProjectModuleInput!]
+  """CSS styles for paragraphs"""
+  paragraphStyles: ProjectFieldStylesInput
+  premiumStatus: PremiumStatus
+  privacy: ProjectPrivacy
+  publishStatus: ProjectPublishStatus
+  """
+  The list of school ids splitting with a pipe character, e.g. "20627|20234".
+  """
+  schools: ProjectSchools
+  """CSS styles for a sub-title"""
+  subTitleStyles: ProjectFieldStylesInput
+  """
+  The list of tags splitting with a pipe character, e.g. "logo design|icons".
+  """
+  tags: ProjectTags
+  """
+  The list of team ids splitting with a pipe character, e.g. "20627|20234".
+  """
+  teams: ProjectTeamsInput
+  """The project title with maximum of 55 symbols."""
+  title: ProjectTitle
+  """CSS styles for a title"""
+  titleStyles: ProjectFieldStylesInput
+  """
+  The list of tool ids splitting with a pipe character, e.g. "185289859|84490865".
+  """
+  tools: ProjectTools
+  """
+  The list of visible network ids splitting with a pipe character, e.g. "0|20".
+  """
+  visibleNetworkIds: ProjectVisibleNetworkIds
+  """
+  The list of ids (users who can see private project) splitting with a pipe character, e.g. "1|2|3".
+  """
+  visibleToUserIds: ProjectVisibleToUserIds
+}
+
+input UpdateSourceFileParams {
+  category: String!
+  currency: String
+  licenseType: String!
+  mimeType: SourceFileMIMEType!
+  moduleIds: [Int]
+  size: String!
+  sourceFileId: Int!
+  tier: SourceFilePriceTier!
+  title: SourceFileTitleType!
+  unitAmount: Float
+}
+
+input UserAvailabilityFilter {
+  isAvailableFreelance: UserAvailabilityFreelance
+  isAvailableFullTime: UserAvailabilityFullTime
+  isLookingForRemote: UserAvailabilityRemote
+}
+
+input VideoModuleInput {
+  alignment: TextAlign
+  caption: Html
+  captionAlignment: TextAlign
+  """
+  Module ID. Negative value is used for a new module - `srcUrl` is required in this case.
+  """
+  id: Int!
+  nftData: NFTInput
+  originalHeight: Int
+  originalWidth: Int
+  """Url to the video in the temporary Amazon S3 bucket."""
+  srcUrl: Url
+  widthUnit: String
+}
+
+input VideoSearchFilter {
+  """
+  The creative field the videos are filtered to, e.g. "graphic design"
+  """
+  creativeField: VideoSearchCreativeField
+  """
+  Length of the videos being searched, e.g. "long", "short"
+  """
+  duration: VideoDurationFilter
+  """Query creative fields associated with a video"""
+  field: creative_field
+  """Specify the way the videos are sorted"""
+  sort: VideoSortType
+  """Type of files attached to the videos being searched"""
+  sourceFiles: VideoSourceFilesFilter
+  """
+  Type of subscription for the videos being searched, e.g. "premium"
+  """
+  subscription: VideoSubscriptionFilter
+  """Specify the tool id the videos are filtered to"""
+  tools: VideoSearchToolId
+  """
+  Type of the videos being searched, e.g. "adobe live"
+  """
+  videoType: VideoSearchTypeFilter
+}
